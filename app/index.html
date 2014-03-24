@@ -3,11 +3,48 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<section id="container-js" class="container">
+    <header class="header">
+        <div class="menu-button" id="toggle-menu-js">MENU</div>
+        Header Graphic Here
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li>Home</li>
+            <li>Vote</li>
+            <li>Videos</li>
+            <li>Photos</li>
+            <li>News</li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <section class="main">
+            <p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </section>
+        
+        <section class="omega">
+             <p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <ul>
+            <li>Home</li>
+            <li>Vote</li>
+            <li>Videos</li>
+            <li>Photos</li>
+            <li>News</li>
+        </ul>
+    </footer>
+
+</section>
