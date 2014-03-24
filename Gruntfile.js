@@ -115,20 +115,20 @@ module.exports = function (grunt) {
         fontsDir: '<%= yeoman.app %>/fonts',
         relativeAssets: false,
         noLineComments: true,
-        httpImagesPath: '/img',
-        httpGeneratedImagesPath: '/img/generated',
+        httpImagesPath: '../img',
+        httpGeneratedImagesPath: '../img',
         outputStyle: 'expanded',
         raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
       },
       dist: {
         options: {
-          generatedImagesDir: '<%= yeoman.dist %>/img/generated'
+          generatedImagesDir: '<%= yeoman.dist %>/img'
         }
       },
       server: {
         options: {
-          debugInfo: true,
-          generatedImagesDir: '.tmp/img/generated'
+          debugInfo: false,
+          generatedImagesDir: '<%= yeoman.app %>/img'
         }
       }
     },

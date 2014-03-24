@@ -1,0 +1,24 @@
+.ico {
+  background-image: url('../img/ico-s634a0f464b.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ico-add-text {
+  background-position: 0 -72px;
+  height: 60px;
+  width: 60px;
+}
+
+.ico-budget {
+  background-position: 0 -12px;
+  height: 60px;
+  width: 60px;
+}
+
+.ico-check-orange {
+  background-position: 0 0;
+  height: 12px;
+  width: 16px;
+}
