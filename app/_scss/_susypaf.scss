@@ -1,0 +1,167 @@
+
+
+// --------------------------------------------
+// settings
+
+$column-width     : 4em;
+$gutter-width     : 0.5em;
+$grid-padding     : 0em;
+
+$total-columns    : 7;
+$medium-columns   : 9;
+$large-columns    : 12;
+
+$container-style  : magic;
+$container-width  : container-outer-width($large-columns);
+
+// --------------------------------------------
+// layout
+
+@include border-box-sizing;
+
+.container {
+  @include container;
+  overflow: hidden;
+}
+
+// --------------------------------------------
+// Small Screens & base styles
+
+$anchor : 2;
+$side   : $total-columns - $anchor;
+
+.nav-open .menu {
+  margin-left: 0;
+}
+
+.nav-open .content {
+  margin-right: - space($side);
+}
+
+.content {
+  width: columns($total-columns);
+  float: left;
+}
+
+.menu {
+  width: columns($side);
+  float: left;
+  margin-left: -100%;
+}
+
+.header, .footer { width: columns($total-columns); }
+
+.menu-button {
+  float: left;
+}
+
+.header, .footer {
+  @include clearfix;
+  padding: 1em;
+  background: rgba(#fcf,.75);
+  text-align: center;
+}
+
+.footer ul {
+  margin-left: 0;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.content {
+  @include clearfix;
+  overflow: hidden;
+  width: 100%;
+}
+
+.menu, .content, .main, .omega {
+  @include transition(.5s all linear);
+}
+
+.menu {
+  background: rgba(#cff,.75);
+  margin-right: 0;
+}
+
+.main {
+  background: rgba(#eee,.75);
+  padding: .5em;
+}
+
+.omega {
+  padding: .5em;
+}
+
+// --------------------------------------------
+// Medium Screens
+
+$main : 6;
+$side : $medium-columns - $main;
+
+@include at-breakpoint($medium-columns) {
+
+  .menu {
+    @include clearfix;
+    width: columns($medium-columns);
+    display: block;
+    margin-left: 0;
+  }
+
+  .menu li {
+    float: left;
+    padding: .4em;
+    list-style: none;
+  }
+
+  .main {
+    @include span-columns($main);
+  }
+
+  .omega {
+    @include span-columns($side);
+    @include omega;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .header, .footer { width: columns($medium-columns); }
+
+}
+
+// --------------------------------------------
+// large
+
+$main : 8;
+$side : $large-columns - $main;
+
+@include at-breakpoint($large-columns) {
+
+  .menu {
+    width: columns($large-columns);
+  }
+
+  .main {
+    @include span-columns($main);
+  }
+
+  .omega {
+    @include span-columns($side);
+    @include omega;
+  }
+
+  .header, .footer { width: columns($large-columns); }
+
+}
+
+// --------------------------------------------
+// styles (for demo only)
+
+.container {
+  @include susy-grid-background;
+  @include at-breakpoint($medium-columns) { @include susy-grid-background; }
+  @include at-breakpoint($large-columns) { @include susy-grid-background; }
+}
