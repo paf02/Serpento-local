@@ -1,0 +1,18 @@
+@import "compass/utilities/sprites";
+
+$icons: sprite-map("ico/*.png", $layout: smart); 
+
+.ico { 
+    background-image: $icons;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+ 
+@each $i in sprite_names($icons) {
+
+    .ico-#{$i} {
+        background-position: sprite-position($icons, $i);
+        @include sprite-dimensions($icons, $i);
+    }
+}
