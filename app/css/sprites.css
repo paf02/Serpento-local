@@ -1,24 +1,60 @@
 .ico {
-  background-image: url('../img/ico-s634a0f464b.png');
+  background-image: url('../img/ico-s7d851f27dc.png');
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
 }
 
-.ico-add-text {
-  background-position: 0 -72px;
-  height: 60px;
-  width: 60px;
+.ico-facebook {
+  background-position: -44px 0;
+  height: 19px;
+  width: 18px;
 }
 
-.ico-budget {
-  background-position: 0 -12px;
-  height: 60px;
-  width: 60px;
+.ico-gplus {
+  background-position: -26px 0;
+  height: 19px;
+  width: 18px;
 }
 
-.ico-check-orange {
+.ico-gt-down {
   background-position: 0 0;
-  height: 12px;
+  height: 9px;
+  width: 15px;
+}
+
+.ico-gt-small {
+  background-position: -15px 0;
+  height: 16px;
+  width: 11px;
+}
+
+.ico-gt {
+  background-position: -80px 0;
+  height: 20px;
+  width: 11px;
+}
+
+.ico-logo {
+  background-position: 0 -40px;
+  height: 26px;
+  width: 217px;
+}
+
+.ico-ribbon-base {
+  background-position: -107px 0;
+  height: 40px;
+  width: 13px;
+}
+
+.ico-ribbon-point {
+  background-position: -91px 0;
+  height: 40px;
   width: 16px;
+}
+
+.ico-twitter {
+  background-position: -62px 0;
+  height: 19px;
+  width: 18px;
 }
