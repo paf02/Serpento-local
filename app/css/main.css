@@ -667,6 +667,14 @@ table {
   display: inline-block;
 }
 
+.header-bottom {
+  background-color: #101010;
+}
+
+.menu > li {
+  list-style: none;
+}
+
 .ico {
   background-image: url('../img/ico-s7d851f27dc.png');
   background-repeat: no-repeat;
