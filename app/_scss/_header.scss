@@ -18,10 +18,10 @@
 }
 
 .header-bottom {
-    // // needs latest Compass, add '@import "compass"' to your scss
+    // needs latest Compass, add '@import "compass"' to your scss
     background-color: #101010; // Old browsers
-    // @include filter-gradient(#101010, #000000, vertical); // IE6-9
-    // @include background-image(linear-gradient(top,  #101010 0%,#000000 100%));
+    @include filter-gradient(#101010, #000000, vertical); // IE6-9
+    @include background-image(linear-gradient(top,  #101010 0%,#000000 100%));
     
 }
 
