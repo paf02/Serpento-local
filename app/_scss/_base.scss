@@ -59,7 +59,8 @@ p {
 }
 
 a {
-    color: #7db701;
+    color: $base-color;
+    text-decoration: none;
 
     &:hover {
         color: #7db701;
