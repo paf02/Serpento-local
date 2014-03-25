@@ -1,8 +1,9 @@
 // Susy grids
-$total-columns  : 12;             // a 12-column grid
-$gutter-width   : 1/4;        // 24px gutters between columns
-$container      : 1000px;
-$gutter-position: after;
+
+$total-columns: 12;
+$column-width: 4em;
+$gutter-width: 1em;
+$container-width: 1000px;
 
 /*
  * Base styles
@@ -15,7 +16,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, ul {
     color: $base-color;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
     padding: 0;
 }
 
