@@ -4,8 +4,8 @@
 @import "susy";
 
 // HTML5 BOILERPLATE INCLUDE
-@import "m5bp";
-@import "normalize";
+@import "_m5bp.scss";
+@import "_normalize.scss";
 
 @import "_variables.scss";
 @import "_base.scss";
