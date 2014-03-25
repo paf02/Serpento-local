@@ -645,8 +645,8 @@ table {
   color: black;
   font-size: 1.6em;
   *zoom: 1;
-  max-width: 50.75em;
-  _width: 50.75em;
+  max-width: 1000px;
+  _width: 1000px;
   padding-left: 1em;
   padding-right: 1em;
   margin-left: auto;
@@ -673,6 +673,13 @@ table {
 }
 .social-networks-list > li {
   display: inline-block;
+}
+
+.test {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
 }
 
 .ico {
