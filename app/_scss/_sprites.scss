@@ -16,3 +16,9 @@ $icons: sprite-map("ico/*.png", $layout: smart);
         @include sprite-dimensions($icons, $i);
     }
 }
+
+.ico-text {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -99999px;
+}

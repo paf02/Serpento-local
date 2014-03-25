@@ -58,3 +58,8 @@
   height: 19px;
   width: 18px;
 }
+
+.ico-text {
+  display: inline-block;
+  text-indent: -99999px;
+}

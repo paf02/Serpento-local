@@ -1,0 +1,86 @@
+// Susy grids
+$total-columns  : 12;             // a 12-column grid
+$gutter-width   : 1/4;        // 24px gutters between columns
+$container      : 1000px;
+$gutter-position: after;
+
+/*
+ * Base styles
+ */
+
+body {
+    font-size: 10px;
+    background: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    color: $base-color;
+}
+
+h1 {
+    color: $base-color;
+    font-size: 4.5em; //45px
+    font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    > sup {
+        font-size: 25%;
+        top: -1.8em;
+    }
+}
+
+h2 {
+    font-size: 2.571428571em;
+    font-weight: 200;
+    margin-bottom: 0.222222222em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.714285714em;
+}
+
+h5 {
+    font-size: 1.285714286em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p {
+    // margin-bottom: 1.785714286em;
+    margin-bottom: 1.428571em;
+}
+
+a {
+    color: #7db701;
+
+    &:hover {
+        color: #7db701;
+        text-decoration: underline;
+    }
+}
+
+hr {
+    margin: 2.142857143em 0;
+    border-top: 0.071428571em solid #e0e0e0;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+// IE 7 fixes
+.lt-ie8 {
+    ul {
+        padding-left: 1.142857143em;
+    }
+
+    li {
+        vertical-align: top;
+    }
+}
