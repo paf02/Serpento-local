@@ -47,3 +47,26 @@
         display: inline-block;
     }
 }
+.header-bottom {
+    // needs latest Compass, add '@import "compass"' to your scss
+    background-color: #101010; // Old browsers
+    @include filter-gradient(#101010, #000000, vertical); // IE6-9
+    @include background-image(linear-gradient(top,  #101010 0%,#000000 100%));
+    
+}
+
+.logo {
+    //@include span-columns(4);
+}
+
+.menu {
+    > li {
+        list-style: none;
+
+    }
+
+}
+
+.test {
+    @include span-columns(3, 12);
+}
