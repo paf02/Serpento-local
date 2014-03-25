@@ -26,13 +26,19 @@
 }
 
 .logo {
-    //@include span-columns(4);
+    @include span-columns(4, 12);
 }
 
-.menu {
+.menu-list {
+    @include span-columns(8 omega, 12);
+
     > li {
         list-style: none;
+    }
 
+    a {
+        color: #ffffff;
+        text-decoration: none;
     }
 
 }

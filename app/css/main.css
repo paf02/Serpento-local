@@ -686,8 +686,26 @@ table {
   background-image: linear-gradient(top, #101010 0%, #000000 100%);
 }
 
-.menu > li {
+.logo {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+
+.menu-list {
+  width: 66.10169%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+.menu-list > li {
   list-style: none;
+}
+.menu-list a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .test {
