@@ -1,22 +1,52 @@
 .header-top {
     background-color: $base-color;
     border-bottom: 1px solid #292929;
+    padding: 1em 0;
 }
 .header-top-content{
+    overflow: hidden;
+
     > .social-networks {
+        float: left;
+
         >span {
+            color: $alternate-inverted-color;
             display: inline-block;
+            font-size: 0.8125em; //13px
         }        
+    }
+
+    > .location {
+        float: right;
+        font-size: 0.8125em; //13px
+        line-height: 1.384615385em; //18px
+
+        > span {
+            color: $alternate-inverted-color;
+
+            &.current-location {
+                color: #FFFFFF;
+                margin-right: 1.230769231em; //16px
+            }
+        }
+
+        > a {
+            border-left: 1px solid #292929;
+            color: $highlight-color;
+            display: inline-block;
+            padding-left: 1.230769231em; //16px
+        }
     }
 }
 .social-networks-list {
     display: inline-block;
     margin-bottom: 0;
+    margin-left: 0.1875em; //3px
+
     > li {
         display: inline-block;
     }
 }
-
 .header-bottom {
     // needs latest Compass, add '@import "compass"' to your scss
     background-color: #101010; // Old browsers
