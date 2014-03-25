@@ -47,28 +47,58 @@
         display: inline-block;
     }
 }
+
+
+
+
 .header-bottom {
+    @include clearfix;
     // needs latest Compass, add '@import "compass"' to your scss
     background-color: #101010; // Old browsers
     @include filter-gradient(#101010, #000000, vertical); // IE6-9
     @include background-image(linear-gradient(top,  #101010 0%,#000000 100%));
     
+    > .container {
+        padding: 1.5em 0 0; //24px 0 0;
+    }
 }
 
 .logo {
-    @include span-columns(4, 12);
+    float: left;
+    font-size: 1em; //24px;
+    line-height: 1em; //24px;
+    margin-bottom: 0;
 }
 
 .menu-list {
-    @include span-columns(8 omega, 12);
+    @include clearfix;
+    float: right;
+    margin-bottom: 0;
 
     > li {
         list-style: none;
+        float: left;
+        padding: 0 0.375em; //0 6px;
+        text-align: center;
     }
 
     a {
         color: #ffffff;
+        display: inline-block;
+    
+        //por ahora
+        //font-size: 14px;
+        font-size: 0.75em; //12px;
+
         text-decoration: none;
+        text-transform: uppercase;
+        padding: 0 1.5em; //0 18px;
+
+        &.active {
+            border-bottom: 0.333333333em solid $highlight-color;//4px solid $highlight-color;
+            color: $highlight-color;
+            padding-bottom: 2.333333333em; //28px;
+        }
     }
 
 }
