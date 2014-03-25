@@ -1,14 +1,18 @@
 .header-top {
-  background-color: $base-color;
-  border-bottom: 1px solid #292929;
+    background-color: $base-color;
+    border-bottom: 1px solid #292929;
 }
 .header-top-content{
-  > .social-networks {
-    
-  }
+    > .social-networks {
+        >span {
+            display: inline-block;
+        }        
+    }
 }
 .social-networks-list {
-  > li {
     display: inline-block;
-  }
+    margin-bottom: 0;
+    > li {
+        display: inline-block;
+    }
 }
