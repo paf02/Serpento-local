@@ -707,14 +707,22 @@ table {
 .header-bottom {
   overflow: hidden;
   *zoom: 1;
-  background-color: #101010;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF101010', endColorstr='#FF000000');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #101010), color-stop(100%, #000000));
-  background-image: -webkit-linear-gradient(top, #101010 0%, #000000 100%);
-  background-image: -moz-linear-gradient(top, #101010 0%, #000000 100%);
-  background-image: -o-linear-gradient(top, #101010 0%, #000000 100%);
-  background-image: linear-gradient(top, #101010 0%, #000000 100%);
+  background: #101010;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #101010 0%, black 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #101010), color-stop(100%, black));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #101010 0%, black 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #101010 0%, black 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #101010 0%, black 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #101010 0%, #000000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#101010', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
 }
 .header-bottom > .container {
   padding: 1.5em 0 0;
@@ -743,6 +751,7 @@ table {
   color: #ffffff;
   display: inline-block;
   font-size: 0.75em;
+  font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0 1.5em;
@@ -757,6 +766,78 @@ table {
   width: 23.72881%;
   float: left;
   margin-right: 1.69492%;
+  display: inline;
+}
+
+.footer {
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #000000;
+}
+.footer > .container {
+  padding: 3.125em 0;
+}
+
+.copyright {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+.copyright .logo {
+  float: none;
+}
+.copyright > p {
+  font-size: 0.875em;
+  font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+}
+
+.copyright-text {
+  color: #7f7f7f;
+  margin-top: 1.25em;
+}
+
+.grupo-monge {
+  color: #ffc000;
+}
+
+.menu-accessibility {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+
+.footer-list {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  margin-bottom: 0;
+}
+.footer-list > li {
+  list-style: none;
+}
+.footer-list > li > a {
+  color: #7f7f7f;
+  font-size: 0.875em;
+  font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+.footer-list > li.title > a {
+  color: #ffffff;
+}
+.footer-list > li.active > a {
+  color: #ffc000;
+}
+
+.footer-list-follow-us {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
   display: inline;
 }
 
