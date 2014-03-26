@@ -688,6 +688,36 @@ table {
   background-color: whitesmoke;
 }
 
+.col2 {
+  width: 14.97976%;
+  float: left;
+  margin-right: 2.02429%;
+  display: inline;
+}
+
+.col2-last {
+  width: 14.97976%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.25em;
+  display: inline;
+}
+
+.col3 {
+  width: 23.48178%;
+  float: left;
+  margin-right: 2.02429%;
+  display: inline;
+}
+
+.col3-last {
+  width: 23.48178%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.25em;
+  display: inline;
+}
+
 .header-top {
   background-color: black;
   border-bottom: 1px solid #292929;
@@ -792,9 +822,9 @@ table {
 }
 
 .test {
-  width: 23.72881%;
+  width: 23.48178%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 2.02429%;
   display: inline;
 }
 
@@ -808,9 +838,9 @@ table {
 }
 
 .copyright {
-  width: 49.15254%;
+  width: 48.98785%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 2.02429%;
   display: inline;
 }
 .copyright .logo {
@@ -832,17 +862,17 @@ table {
 }
 
 .menu-accessibility {
-  width: 49.15254%;
+  width: 48.98785%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -1.25em;
   display: inline;
 }
 
 .footer-list {
-  width: 32.20339%;
+  width: 31.98381%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 2.02429%;
   display: inline;
   margin-bottom: 0;
 }
@@ -863,10 +893,10 @@ table {
 }
 
 .footer-list-follow-us {
-  width: 32.20339%;
+  width: 31.98381%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -1.25em;
   display: inline;
 }
 
@@ -941,4 +971,8 @@ table {
   background-image: url("../img/bg-home-main-banner.png");
   background-position: top right;
   background-repeat: no-repeat;
+}
+
+.main-banner-content > h1 {
+  font-family: 'Source Sans Pro', sans-serif;
 }

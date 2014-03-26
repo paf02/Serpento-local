@@ -3,3 +3,9 @@
     background-position: top right;
     background-repeat: no-repeat;
 }
+
+.main-banner-content {
+    > h1 {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+}
