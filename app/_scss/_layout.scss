@@ -32,6 +32,14 @@
     background-color: $alternate-background;
 }
 
+.col1 {
+    @include span-columns(1, 12);
+}
+
+.col1-last {
+    @include span-columns(1 omega, 12);
+}
+
 .col2 {
     @include span-columns(2, 12);
 }
@@ -46,4 +54,76 @@
 
 .col3-last {
     @include span-columns(3 omega, 12);
+}
+
+.col4 {
+    @include span-columns(4, 12);
+}
+
+.col4-last {
+    @include span-columns(4 omega, 12);
+}
+
+.col5 {
+    @include span-columns(5, 12);
+}
+
+.col5-last {
+    @include span-columns(5 omega, 12);
+}
+
+.col6 {
+    @include span-columns(6, 12);
+}
+
+.col6-last {
+    @include span-columns(6 omega, 12);
+}
+
+.col7 {
+    @include span-columns(7, 12);
+}
+
+.col7-last {
+    @include span-columns(7 omega, 12);
+}
+
+.col8 {
+    @include span-columns(8, 12);
+}
+
+.col8-last {
+    @include span-columns(8 omega, 12);
+}
+
+.col9 {
+    @include span-columns(9, 12);
+}
+
+.col9-last {
+    @include span-columns(9 omega, 12);
+}
+
+.col10 {
+    @include span-columns(10, 12);
+}
+
+.col10-last {
+    @include span-columns(10 omega, 12);
+}
+
+.col11 {
+    @include span-columns(11, 12);
+}
+
+.col11-last {
+    @include span-columns(11 omega, 12);
+}
+
+.col12 {
+    @include span-columns(12, 12);
+}
+
+.col12-last {
+    @include span-columns(12 omega, 12);
 }
