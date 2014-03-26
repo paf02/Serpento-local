@@ -853,13 +853,6 @@ table {
   display: inline;
 }
 
-.col12 {
-  width: 100%;
-  float: left;
-  margin-right: 2.02429%;
-  display: inline;
-}
-
 .col12-last {
   width: 100%;
   float: right;
@@ -971,13 +964,6 @@ table {
   padding-bottom: 2.333333333em;
 }
 
-.test {
-  width: 23.48178%;
-  float: left;
-  margin-right: 2.02429%;
-  display: inline;
-}
-
 .footer {
   overflow: hidden;
   *zoom: 1;
@@ -987,12 +973,6 @@ table {
   padding: 3.125em 0;
 }
 
-.copyright {
-  width: 48.98785%;
-  float: left;
-  margin-right: 2.02429%;
-  display: inline;
-}
 .copyright .logo {
   float: none;
 }
@@ -1011,43 +991,23 @@ table {
   color: #ffc000;
 }
 
-.menu-accessibility {
-  width: 48.98785%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1.25em;
-  display: inline;
-}
-
-.footer-list {
-  width: 31.98381%;
-  float: left;
-  margin-right: 2.02429%;
-  display: inline;
+.footer-lists {
   margin-bottom: 0;
 }
-.footer-list > li {
+.footer-lists > li {
   list-style: none;
 }
-.footer-list > li > a {
+.footer-lists > li > a {
   color: #7f7f7f;
   font-size: 0.875em;
   font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
-.footer-list > li.title > a {
+.footer-lists > li.title > a {
   color: #ffffff;
 }
-.footer-list > li.active > a {
+.footer-lists > li.active > a {
   color: #ffc000;
-}
-
-.footer-list-follow-us {
-  width: 31.98381%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1.25em;
-  display: inline;
 }
 
 .ico {
