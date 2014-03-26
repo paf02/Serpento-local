@@ -120,10 +120,6 @@
     @include span-columns(11 omega, 12);
 }
 
-.col12 {
-    @include span-columns(12, 12);
-}
-
 .col12-last {
     @include span-columns(12 omega, 12);
 }
