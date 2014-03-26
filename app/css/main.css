@@ -570,8 +570,10 @@ th {
  * Base styles
  */
 body {
-  font-size: 10px;
   background: #ffffff;
+  font-size: 10px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-width: 1000px;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul {
@@ -645,6 +647,7 @@ table {
 .container {
   color: black;
   font-size: 1.6em;
+  min-width: 1000px;
   *zoom: 1;
   max-width: 1000px;
   _width: 1000px;
@@ -657,6 +660,32 @@ table {
   content: "";
   display: table;
   clear: both;
+}
+
+.rotate {
+  margin-left: -8px;
+  padding: 30px 0;
+  width: 101.5%;
+}
+.rotate.rotate-top {
+  margin-top: -30px;
+}
+
+.rotate-right {
+  transform: rotate(2.5deg);
+}
+
+.rotate-left {
+  transform: rotate(-2.5deg);
+}
+
+.has-rotated {
+  overflow: hidden;
+  width: 100%;
+}
+
+.alternate-background {
+  background-color: whitesmoke;
 }
 
 .header-top {
@@ -825,4 +854,10 @@ table {
   display: inline-block;
   overflow: hidden;
   text-indent: -99999px;
+}
+
+.main-banner {
+  background-image: url("../img/bg-home-main-banner.png");
+  background-position: top right;
+  background-repeat: no-repeat;
 }

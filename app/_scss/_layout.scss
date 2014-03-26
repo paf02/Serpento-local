@@ -1,5 +1,49 @@
 .container {
     color: $base-color;
     font-size: $base-font-size;
+    min-width: 1000px;
     @include container;
+}
+
+.rotate {
+    margin-left: -8px;
+    padding: 30px 0;
+    width: 101.5%;
+
+    &.rotate-top {
+        margin-top: -30px;
+    }
+}
+
+.rotate-right {
+    transform:rotate(2.5deg);
+}
+
+.rotate-left {
+    transform:rotate(-2.5deg);
+}
+
+.has-rotated {
+    overflow: hidden;
+    width: 100%;
+}
+
+.alternate-background {
+    background-color: $alternate-background;
+}
+
+.col2 {
+    @include span-columns(2, 12);
+}
+
+.col2-last {
+    @include span-columns(2 omega, 12);
+}
+
+.col3 {
+    @include span-columns(3, 12);
+}
+
+.col3-last {
+    @include span-columns(3 omega, 12);
 }
