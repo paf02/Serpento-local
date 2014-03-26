@@ -54,9 +54,21 @@
 .header-bottom {
     @include clearfix;
     // needs latest Compass, add '@import "compass"' to your scss
-    background-color: #101010; // Old browsers
-    @include filter-gradient(#101010, #000000, vertical); // IE6-9
-    @include background-image(linear-gradient(top,  #101010 0%,#000000 100%));
+    // background-color: #101010; // Old browsers
+    // @include filter-gradient(#101010, #000000, vertical); // IE6-9
+    // @include background-image(linear-gradient(top,  #101010 0%,#000000 100%));
+
+    
+    background: #101010; /* Old browsers */
+    background: -moz-linear-gradient(top,  #101010 0%, #000000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#101010), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #101010 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #101010 0%,#000000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #101010 0%,#000000 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #101010 0%,#000000 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#101010', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+
     
     > .container {
         padding: 1.5em 0 0; //24px 0 0;
@@ -89,6 +101,7 @@
         //por ahora
         //font-size: 14px;
         font-size: 0.75em; //12px;
+        font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
         text-decoration: none;
         text-transform: uppercase;
