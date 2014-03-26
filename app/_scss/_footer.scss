@@ -1,0 +1,67 @@
+.footer {
+    @include clearfix;
+    background-color: #000000;
+
+    > .container {
+        padding: 3.125em 0; //50px 0;
+    }
+}
+
+.copyright {
+    @include span-columns(6, 12);
+
+    .logo {
+        float: none;
+    }
+
+    > p {
+        font-size: 0.875em; //14px;
+        font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin-bottom: 0;
+    }
+}
+
+.copyright-text {
+    color: $alternate-inverted-color;
+    margin-top: 1.25em; //20px;
+}
+
+.grupo-monge {
+    color: $highlight-color;
+}
+
+.menu-accessibility {
+    @include span-columns(6 omega, 12);
+}
+
+.footer-list {
+    @include span-columns(4, 12);
+    margin-bottom: 0;
+
+    > li {
+        list-style: none;
+
+        > a {
+            color: $alternate-inverted-color;
+            font-size: 0.875em; //14px;
+            font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            text-decoration: none;
+        }
+
+        &.title {
+            > a {
+                color: #ffffff;
+            }
+        }
+
+        &.active {
+            > a {
+                color: $highlight-color;
+            }
+        }
+    }
+}
+
+.footer-list-follow-us {
+    @include span-columns(4 omega, 12);
+}
