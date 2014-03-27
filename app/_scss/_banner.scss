@@ -1,5 +1,48 @@
 .main-banner {
+    min-height: 670px;
+}
+
+.main-banner-container {
+    background: $base-color;
+    min-height: 522px;
+
+    > div {
+        padding-top: 6.25em; //100px
+    }
+}
+
+.main-banner-content {
+    color: $inverted-base-color;
+
+    > h1 {
+        color: $inverted-base-color;
+        font-family: 'Source Sans Pro', sans-serif;
+        line-height: 0.9em;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+    }
+
+    > ul,p {
+        color: $inverted-base-color;
+    }
+
+    > p {
+        font-size: 0.75em; //12px
+        margin-bottom: 0;
+        line-height: 2.2em;
+    }
+}
+
+.main-banner-image {
     background-image: url("#{$img-path}bg-home-main-banner.png");
-    background-position: top right;
+    background-position: right top;
     background-repeat: no-repeat;
+    height: 698px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    @media all and (max-width: 1600px) {
+        background-position: 630px 0; 
+    }
 }

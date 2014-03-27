@@ -1,0 +1,14 @@
+.price {
+    color: $highlight-color;
+    font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    &.price-large {
+        font-size: 2.875em; //46px
+        margin-right: 0.217391304em; //10px
+    } 
+
+    &.price-small {
+        font-size: 1.5em; //24px
+        margin-right: 0.416666667em; //10px
+    }   
+}

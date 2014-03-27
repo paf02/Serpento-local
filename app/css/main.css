@@ -663,12 +663,12 @@ table {
 }
 
 .rotate {
-  margin-left: -8px;
-  padding: 30px 0;
-  width: 101.5%;
+  margin-left: -12px;
+  padding: 40px 0;
+  width: 102%;
 }
 .rotate.rotate-top {
-  margin-top: -30px;
+  margin-top: -40px;
 }
 
 .rotate-right {
@@ -1078,7 +1078,73 @@ table {
 }
 
 .main-banner {
+  min-height: 670px;
+}
+
+.main-banner-container {
+  background: black;
+  min-height: 522px;
+}
+.main-banner-container > div {
+  padding-top: 6.25em;
+}
+
+.main-banner-content {
+  color: white;
+}
+.main-banner-content > h1 {
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 0.9em;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.main-banner-content > ul, .main-banner-content p {
+  color: white;
+}
+.main-banner-content > p {
+  font-size: 0.75em;
+  margin-bottom: 0;
+  line-height: 2.2em;
+}
+
+.main-banner-image {
   background-image: url("../img/bg-home-main-banner.png");
-  background-position: top right;
+  background-position: right top;
   background-repeat: no-repeat;
+  height: 698px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+@media all and (max-width: 1600px) {
+  .main-banner-image {
+    background-position: 630px 0;
+  }
+}
+
+.price {
+  color: #ffc000;
+  font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.price.price-large {
+  font-size: 2.875em;
+  margin-right: 0.217391304em;
+}
+.price.price-small {
+  font-size: 1.5em;
+  margin-right: 0.416666667em;
+}
+
+.list {
+  list-style: none;
+}
+.list > li:before {
+  background-color: #ffc000;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  margin-right: 0.625em;
+  vertical-align: middle;
+  width: 5px;
 }

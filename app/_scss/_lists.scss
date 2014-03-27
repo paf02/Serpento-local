@@ -1,0 +1,15 @@
+.list {
+    list-style: none;
+
+    >li {
+        &:before {
+            background-color: $highlight-color;
+            content: "";
+            display: inline-block;
+            height: 5px;
+            margin-right: 0.625em; //10px
+            vertical-align: middle;
+            width: 5px;
+        }
+    }
+}
