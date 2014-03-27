@@ -667,9 +667,6 @@ table {
   padding: 40px 0;
   width: 102%;
 }
-.rotate.rotate-top {
-  margin-top: -40px;
-}
 
 .rotate-right {
   transform: rotate(2.5deg);
@@ -681,6 +678,7 @@ table {
 
 .has-rotated {
   overflow: hidden;
+  position: relative;
   width: 100%;
 }
 
@@ -909,6 +907,7 @@ table {
 .header-bottom {
   overflow: hidden;
   *zoom: 1;
+  border: 1px solid #242424;
   background: #101010;
   /* Old browsers */
   background: -moz-linear-gradient(top, #101010 0%, black 100%);
@@ -1011,7 +1010,7 @@ table {
 }
 
 .ico {
-  background-image: url('../img/ico-s7d851f27dc.png');
+  background-image: url('../img/ico-s12f79c12c3.png');
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
@@ -1027,6 +1026,12 @@ table {
   background-position: -26px 0;
   height: 19px;
   width: 18px;
+}
+
+.ico-gt-alternate {
+  background-position: -91px 0;
+  height: 23px;
+  width: 15px;
 }
 
 .ico-gt-down {
@@ -1048,19 +1053,31 @@ table {
 }
 
 .ico-logo {
-  background-position: 0 -40px;
+  background-position: 0 -50px;
   height: 26px;
   width: 217px;
 }
 
+.ico-ribbon-alternate-base {
+  background-position: -156px 0;
+  height: 50px;
+  width: 17px;
+}
+
+.ico-ribbon-alternate-point {
+  background-position: -135px 0;
+  height: 50px;
+  width: 21px;
+}
+
 .ico-ribbon-base {
-  background-position: -107px 0;
+  background-position: -122px 0;
   height: 40px;
   width: 13px;
 }
 
 .ico-ribbon-point {
-  background-position: -91px 0;
+  background-position: -106px 0;
   height: 40px;
   width: 16px;
 }
@@ -1080,17 +1097,23 @@ table {
 .main-banner {
   min-height: 670px;
 }
+.main-banner > .rotate {
+  background: black;
+  margin-top: -45px;
+}
 
 .main-banner-container {
   background: black;
-  min-height: 522px;
 }
 .main-banner-container > div {
   padding-top: 6.25em;
+  padding-bottom: 2.5625em;
 }
 
 .main-banner-content {
   color: white;
+  position: relative;
+  z-index: 2;
 }
 .main-banner-content > h1 {
   color: white;
@@ -1106,6 +1129,9 @@ table {
   font-size: 0.75em;
   margin-bottom: 0;
   line-height: 2.2em;
+}
+.main-banner-content > .ribbon {
+  margin-top: 1.25em;
 }
 
 .main-banner-image {
@@ -1147,4 +1173,23 @@ table {
   margin-right: 0.625em;
   vertical-align: middle;
   width: 5px;
+}
+
+.ribbon {
+  display: inline-block;
+}
+.ribbon > .ribbon-content {
+  display: inline-block;
+  font-size: 0.875em;
+  padding-left: 1.071428571em;
+  vertical-align: top;
+}
+.ribbon > .ribbon-content.ribbon-alternate {
+  background: url("../img/bg-ribbon-alternate.jpg") repeat-x 0 0;
+  color: black;
+  line-height: 3.571428571em;
+}
+.ribbon > .ribbon-content.ribbon-alternate > .ico-gt-alternate {
+  margin-left: 0.857142857em;
+  vertical-align: middle;
 }

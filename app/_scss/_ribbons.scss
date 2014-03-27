@@ -1,0 +1,21 @@
+.ribbon {
+    display: inline-block;
+    
+    >.ribbon-content {
+        display: inline-block;
+        font-size: 0.875em; //14px
+        padding-left: 1.071428571em; //15px
+        vertical-align: top;
+
+        &.ribbon-alternate {
+            background: url("#{$img-path}bg-ribbon-alternate.jpg") repeat-x 0 0;
+            color: $base-color;
+            line-height: 3.571428571em; //50px
+
+            > .ico-gt-alternate {
+                margin-left: 0.857142857em; //12px
+                vertical-align: middle;
+            }
+        }
+    }
+}

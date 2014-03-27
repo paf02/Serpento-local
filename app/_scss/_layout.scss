@@ -9,10 +9,6 @@
     margin-left: -12px;
     padding: 40px 0;
     width: 102%;
-
-    &.rotate-top {
-        margin-top: -40px;
-    }
 }
 
 .rotate-right {
@@ -25,6 +21,7 @@
 
 .has-rotated {
     overflow: hidden;
+    position: relative;
     width: 100%;
 }
 

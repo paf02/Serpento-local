@@ -1,18 +1,25 @@
 .main-banner {
     min-height: 670px;
+
+    >.rotate {
+        background: $base-color;
+        margin-top: -45px;
+    }
 }
 
 .main-banner-container {
     background: $base-color;
-    min-height: 522px;
 
     > div {
         padding-top: 6.25em; //100px
+        padding-bottom: 2.5625em; //41px
     }
 }
 
 .main-banner-content {
     color: $inverted-base-color;
+    position: relative;
+    z-index: 2;
 
     > h1 {
         color: $inverted-base-color;
@@ -30,6 +37,10 @@
         font-size: 0.75em; //12px
         margin-bottom: 0;
         line-height: 2.2em;
+    }
+
+    > .ribbon {
+        margin-top: 1.25em; //20px
     }
 }
 
