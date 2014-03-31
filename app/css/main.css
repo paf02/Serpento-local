@@ -1010,7 +1010,7 @@ table {
 }
 
 .ico {
-  background-image: url('../img/ico-s12f79c12c3.png');
+  background-image: url('../img/ico-s6588c56eff.png');
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
@@ -1029,7 +1029,7 @@ table {
 }
 
 .ico-gt-alternate {
-  background-position: -91px 0;
+  background-position: -113px 0;
   height: 23px;
   width: 15px;
 }
@@ -1052,6 +1052,12 @@ table {
   width: 11px;
 }
 
+.ico-left-arrow {
+  background-position: -91px 0;
+  height: 20px;
+  width: 11px;
+}
+
 .ico-logo {
   background-position: 0 -50px;
   height: 26px;
@@ -1059,27 +1065,33 @@ table {
 }
 
 .ico-ribbon-alternate-base {
-  background-position: -156px 0;
+  background-position: -178px 0;
   height: 50px;
   width: 17px;
 }
 
 .ico-ribbon-alternate-point {
-  background-position: -135px 0;
+  background-position: -157px 0;
   height: 50px;
   width: 21px;
 }
 
 .ico-ribbon-base {
-  background-position: -122px 0;
+  background-position: -144px 0;
   height: 40px;
   width: 13px;
 }
 
 .ico-ribbon-point {
-  background-position: -106px 0;
+  background-position: -128px 0;
   height: 40px;
   width: 16px;
+}
+
+.ico-right-arrow {
+  background-position: -102px 0;
+  height: 20px;
+  width: 11px;
 }
 
 .ico-twitter {
@@ -1147,6 +1159,35 @@ table {
   .main-banner-image {
     background-position: 630px 0;
   }
+}
+
+.bx-wrapper .bx-viewport {
+  border: none !important;
+  box-shadow: none !important;
+  left: 0 !important;
+}
+.bx-wrapper .bx-prev {
+  background: none !important;
+  left: 0 !important;
+}
+.bx-wrapper .bx-next {
+  background: none !important;
+  right: 0 !important;
+}
+.bx-wrapper .bx-controls-direction a {
+  background-color: #F5F5F5 !important;
+  height: 200px !important;
+  margin-top: -100px !important;
+  text-indent: 0 !important;
+  width: 70px !important;
+}
+
+.img-arrow {
+  left: 50%;
+  margin-left: -6px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
 }
 
 .price {
