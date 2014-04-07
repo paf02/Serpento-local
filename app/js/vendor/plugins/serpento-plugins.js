@@ -5,7 +5,7 @@
      $.fn.extend({
         selectBox: function(options) {
             var settings = {
-
+                cb : function(li) {}
             },
             options = $.extend(settings, options);
 
@@ -30,11 +30,11 @@
                     $currentBox.find('.location').removeClass('selected');
                     $location.addClass('selected'); 
             };
-            
+
             return this.each(function() {
                 var $selectBox = $(this),
-                    $selectHead = $('.select-box-current'),
-                    $selectOptions = $('.select-box-options');
+                    $selectHead = $selectBox.find('.select-box-current'),
+                    $selectOptions = $selectBox.find('.select-box-options');
                 init($selectBox, $selectOptions, $selectHead);
             });
         }
