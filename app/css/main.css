@@ -593,9 +593,10 @@ h1 > sup {
 }
 
 h2 {
-  font-size: 2.571428571em;
-  font-weight: 200;
-  margin-bottom: 0.222222222em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.1875em;
+  margin-bottom: 0.142857143em;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -620,11 +621,16 @@ p {
 
 a {
   color: black;
+  font-size: 0.875em;
+  font-weight: bold;
   text-decoration: none;
 }
 a:hover {
   color: #7db701;
   text-decoration: underline;
+}
+a.inverted {
+  color: white;
 }
 
 hr {
@@ -1106,6 +1112,10 @@ table {
   text-indent: -99999px;
 }
 
+a > .ico-gt-small {
+  margin-left: 0.5em;
+}
+
 .main-banner {
   min-height: 670px;
 }
@@ -1144,6 +1154,7 @@ table {
 }
 .main-banner-content > .ribbon {
   margin-top: 1.25em;
+  margin-right: 1.142857143em;
 }
 
 .main-banner-image {
@@ -1221,7 +1232,6 @@ table {
 }
 .ribbon > .ribbon-content {
   display: inline-block;
-  font-size: 0.875em;
   padding-left: 1.071428571em;
   vertical-align: top;
 }
@@ -1234,3 +1244,66 @@ table {
   margin-left: 0.857142857em;
   vertical-align: middle;
 }
+
+/* 
+** Select box 
+*/
+.select-box {
+  color: #666666;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.select-box-current {
+  border: 1px solid #e0e0e0;
+  min-width: 188px;
+  padding-bottom: 0.75em;
+  padding-left: 0.9375em;
+  padding-right: 0.625em;
+  padding-top: 0.75em;
+}
+.select-box-current > .ico-gt-down {
+  margin-left: 1.25em;
+  margin-top: 0.3em;
+  float: right;
+}
+
+.select-box-options {
+  background-color: #ffffff;
+  display: none;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+}
+.select-box-options > li {
+  padding: 0.9375em;
+  border: 1px solid #e0e0e0;
+  border-top-width: 0;
+}
+.select-box-options > li:hover {
+  background-color: #f5f5f5;
+}
+.select-box-options > li.selected {
+  background-color: #ffc000;
+}
+
+/*
+** General
+*/
+.content-header > div:first-child {
+  float: left;
+}
+.content-header > .sale-location {
+  float: right;
+}
+.content-header > .sale-location > span {
+  font-weight: bold;
+}
+.content-header > .sale-location > .select-box {
+  margin-left: 1em;
+}
+
+/*
+** Home
+*/

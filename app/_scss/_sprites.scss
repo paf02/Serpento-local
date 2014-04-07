@@ -22,3 +22,9 @@ $icons: sprite-map("ico/*.png", $layout: smart);
   overflow: hidden;
   text-indent: -99999px;
 }
+
+a {
+  > .ico-gt-small {
+    margin-left: 0.5em; //7px
+  }
+}
