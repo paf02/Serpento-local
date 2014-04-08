@@ -1,14 +1,9 @@
 .main-banner {
     min-height: 670px;
-
-    >.rotate {
-        background: $base-color;
-        margin-top: -45px;
-    }
 }
 
 .main-banner-container {
-    background: $base-color;
+    //background: $base-color;
 
     > div {
         padding-top: 6.25em; //100px

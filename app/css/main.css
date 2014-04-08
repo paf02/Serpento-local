@@ -1130,14 +1130,7 @@ a > .ico-gt-small {
 .main-banner {
   min-height: 670px;
 }
-.main-banner > .rotate {
-  background: black;
-  margin-top: -45px;
-}
 
-.main-banner-container {
-  background: black;
-}
 .main-banner-container > div {
   padding-top: 6.25em;
   padding-bottom: 2.5625em;
@@ -1184,8 +1177,10 @@ a > .ico-gt-small {
 
 .bx-wrapper .bx-viewport {
   border: none !important;
+  background: none !important;
   box-shadow: none !important;
   left: 0 !important;
+  z-index: 10;
 }
 .bx-wrapper .bx-prev {
   background: none !important;
@@ -1202,6 +1197,9 @@ a > .ico-gt-small {
   text-indent: 0 !important;
   width: 70px !important;
 }
+.bx-wrapper .rotate {
+  background: black;
+  margin-top: -45px;
 
 .best-sale-slider .bx-controls-direction a {
   border: 1px solid #e0e0e0;
@@ -1222,6 +1220,31 @@ a > .ico-gt-small {
   margin-top: -10px;
   position: absolute;
   top: 50%;
+}
+
+.bx-viewport-bg {
+  background-color: #000000;
+  bottom: 3em;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.bx-viewport-bg .bx-viewport-container-bg-rotate {
+  bottom: -100px;
+  height: 140px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.bx-viewport-bg .rotate {
+  bottom: 65px;
+  height: auto;
+  margin-left: -12px;
+  margin-top: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
 }
 
 .price-container > strong {
