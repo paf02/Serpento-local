@@ -1200,6 +1200,7 @@ a > .ico-gt-small {
 .bx-wrapper .rotate {
   background: black;
   margin-top: -45px;
+}
 
 .best-sale-slider .bx-controls-direction a {
   border: 1px solid #e0e0e0;
@@ -1212,6 +1213,9 @@ a > .ico-gt-small {
 }
 .best-sale-slider .bx-next {
   right: -120px !important;
+}
+.best-sale-slider .bx-viewport-bg {
+  display: none;
 }
 
 .img-arrow {
