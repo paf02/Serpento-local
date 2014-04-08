@@ -1373,6 +1373,10 @@ a > .ico-gt-small {
 /*
 ** Best Sale
 */
+.best-sale {
+  margin-bottom: 4.0625em;
+}
+
 .best-sale-slider {
   margin-top: 3.75em;
 }
