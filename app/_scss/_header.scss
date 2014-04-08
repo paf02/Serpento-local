@@ -115,4 +115,25 @@
         }
     }
 
+    .sub-menu {
+        background-color: #FFFFFF;
+        left: 0;
+        padding: 30px 0;
+        position: absolute;
+        overflow: hidden;
+        text-align: left;
+        width: 100%;
+        z-index: 11;
+
+        > li {
+            list-style: none;
+            background-color: red;
+            float: left;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
 }

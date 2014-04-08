@@ -39,4 +39,36 @@
             });
         }
      });
+
+    $.fn.extend({ 
+        carouselOne: function(options) {
+
+            //Settings list and the default values
+            var defaults = {
+                    defaultRating: 0,
+                    totalStars: 5
+                },
+                options = $.extend(defaults, options);
+
+            function builtUl() {
+                var totalRating = 0,
+                    totalRatingPartial = 0,
+                    fragment = document.createDocumentFragment(),
+                    ul = fragment.appendChild(document.createElement('ul')),
+                    i  = 0,
+                    vecRatingStarsInit;
+
+                
+                vecRatingStarsInit = options.$el.data('rating');
+
+            }
+
+            return this.each(function() {
+                options.$el = $(this);
+
+                builtUl();
+            });
+        }
+    });
+
 }) (jQuery);

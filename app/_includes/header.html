@@ -20,7 +20,27 @@
         <div class="container">
             <a href="#" class="logo"><i class="ico ico-logo ico-text">Serpento</i></a>
             <ul class="menu-list">
-                <li><a class="active" href="#">Motocicletas</a></li>
+                <li><a class="active" href="#">Motocicletas</a>
+                    <ul class=" sub-menu">
+                        <li>
+                            <img src="/img/menu-moto1.jpg" alt="P600" >
+                            <p>Serpento P600</p>
+                        </li>
+                        <li>
+                            <img src="/img/menu-moto2.jpg" alt="P600" >
+                            <p>Serpento P600</p>
+                        </li>
+                        <li>
+                            <img src="/img/menu-moto3.jpg" alt="P600" >
+                            <p>Serpento P600</p>
+                        </li>
+                        <li>
+                            <img src="/img/menu-moto4.jpg" alt="P600" >
+                            <p>Serpento P600</p>
+                        </li>
+                    </ul>
+                </li>
+                
                 <li><a href="#">Accesorios</a></li>
                 <li><a href="#">Donde comprar</a></li>
                 <li><a href="#">Talleres</a></li>
@@ -31,5 +51,13 @@
     </nav>
 </header>
 
-
+{% contentfor inlinescripts %}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.bxslider111').bxSlider({
+            pager: false
+        });
+    });
+</script>
+{% endcontentfor %}
 

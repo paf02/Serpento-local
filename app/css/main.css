@@ -979,6 +979,24 @@ table {
   color: #ffc000;
   padding-bottom: 2.333333333em;
 }
+.menu-list .sub-menu {
+  background-color: #FFFFFF;
+  left: 0;
+  padding: 30px 0;
+  position: absolute;
+  overflow: hidden;
+  text-align: left;
+  width: 100%;
+  z-index: 11;
+}
+.menu-list .sub-menu > li {
+  list-style: none;
+  background-color: red;
+  float: left;
+}
+.menu-list .sub-menu p {
+  margin-bottom: 0;
+}
 
 .footer {
   overflow: hidden;
