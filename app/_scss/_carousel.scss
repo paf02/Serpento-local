@@ -24,6 +24,23 @@
     }
 }
 
+.best-sale-slider {
+    .bx-controls-direction a {
+        border: 1px solid #e0e0e0;
+        margin-top: -60px !important;
+        height: 120px !important;
+        width: 60px !important;
+    }
+
+    .bx-prev {
+        left: -120px !important;
+    }
+
+    .bx-next {
+        right: -120px !important;
+    }
+}
+
 
 .img-left-arrow {
 

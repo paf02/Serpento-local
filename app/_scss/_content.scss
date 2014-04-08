@@ -16,11 +16,54 @@
 
         > .select-box {
             margin-left: 1em; //16px
+            z-index: 1;
         }
     }
 }
 
 /*
-** Home
+** Best Sale
 */
+.best-sale-slider {
+    margin-top: 3.75em; //60px
+}
 
+.best-sale-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sale-column {
+    
+    &:hover {
+        background-color: $alternate-background;
+        border:0.0625em solid #e0e0e0;
+        border-top: 0.25em solid $highlight-color;
+        padding: 2.25em 1.8125em 2.4375em 1.8125em; //36px 29px 39px 29px
+    }
+
+    padding: 2.5em 1.875em; //40px 30px
+
+    > .list {
+        font-size: 0.875em; //14px
+        color: $base-font-color;
+    }
+
+    > p {
+        color: $base-font-color;
+        line-height: 1;
+        margin-bottom: 1.875em; //30px
+    }
+
+    > h3 {
+        font-size: 1.5em; //24px
+    }
+
+    > .best-sale-product {
+        margin: 0 auto 3.4375em auto;
+    }
+
+    > .ribbon {
+        margin-bottom: 2.142857143em; //30px
+    }
+}
