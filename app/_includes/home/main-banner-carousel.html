@@ -12,7 +12,9 @@
 {% contentfor inlinescripts %}
 <script type="text/javascript">
     $(document).ready(function(){
-        $('.bxslider').bxSlider();
+        $('.bxslider').bxSlider({
+            pager: false
+        });
     });
 </script>
 {% endcontentfor %}
