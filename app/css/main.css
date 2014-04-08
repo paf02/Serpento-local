@@ -1367,7 +1367,7 @@ a > .ico-gt-small {
 }
 .content-header > .sale-location > .select-box {
   margin-left: 1em;
-  z-index: 1;
+  z-index: 99;
 }
 
 /*
@@ -1408,4 +1408,46 @@ a > .ico-gt-small {
 }
 .sale-column > .ribbon {
   margin-bottom: 2.142857143em;
+}
+
+/*
+** Offers
+*/
+.offers {
+  padding-top: 82px;
+}
+.offers > .rotate {
+  background-color: whitesmoke;
+  border-top: 1px solid #e4e4e4;
+  position: absolute;
+  top: 45px;
+}
+.offers > .offers-container {
+  background-color: whitesmoke;
+  position: relative;
+  z-index: 1;
+}
+
+.offers-content > p {
+  color: #666666;
+  max-width: 50%;
+}
+
+.offers-column-container {
+  margin-top: 3.75em;
+  margin-bottom: 5.625em;
+  overflow: hidden;
+}
+
+.offers-column {
+  background-color: #eaeaea;
+  border: 1px solid #cfcfcf;
+  line-height: 200px;
+  min-height: 200px;
+  text-align: center;
+}
+.offers-column > span {
+  color: #666666;
+  font-weight: bold;
+  vertical-align: middle;
 }
