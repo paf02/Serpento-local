@@ -1,0 +1,46 @@
+/* 
+** Select box 
+*/
+.select-box {
+    color: #666666;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.select-box-current {
+    border: 1px solid #e0e0e0;
+    min-width: 188px;
+    padding-bottom: 0.75em; //12px
+    padding-left: 0.9375em; //15px
+    padding-right: 0.625em; //10px
+    padding-top: 0.75em; //12px
+
+    > .ico-gt-down {
+        margin-left: 1.25em; //20px
+        margin-top: 0.3em;
+        float: right;
+    }
+}
+
+.select-box-options {
+    background-color: #ffffff;
+    display: none;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+
+    > li {        
+        padding: 0.9375em; //15px
+        border: 1px solid #e0e0e0;
+        border-top-width: 0;
+
+        &:hover {
+            background-color: #f5f5f5;
+        } 
+
+        &.selected {
+            background-color: $highlight-color;
+        }
+    }
+}

@@ -34,9 +34,10 @@ h1 {
 }
 
 h2 {
-    font-size: 2.571428571em;
-    font-weight: 200;
-    margin-bottom: 0.222222222em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.1875em; //35px
+    margin-bottom: 0.142857143em; //5px
+    text-transform: uppercase;
 }
 
 h3 {
@@ -62,11 +63,17 @@ p {
 
 a {
     color: $base-color;
+    font-size: 0.875em; //14px
+    font-weight: bold;
     text-decoration: none;
 
     &:hover {
         color: #7db701;
         text-decoration: underline;
+    }
+
+    &.inverted {
+        color: $inverted-base-color;
     }
 }
 

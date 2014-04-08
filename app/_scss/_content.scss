@@ -1,0 +1,26 @@
+/*
+** General
+*/ 
+
+.content-header {
+    > div:first-child {
+        float: left;
+    }
+
+    > .sale-location {
+        float: right;
+
+        > span {
+            font-weight: bold;
+        }
+
+        > .select-box {
+            margin-left: 1em; //16px
+        }
+    }
+}
+
+/*
+** Home
+*/
+
