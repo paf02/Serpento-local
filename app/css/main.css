@@ -979,26 +979,37 @@ table {
   color: #ffc000;
   padding-bottom: 2.333333333em;
 }
+.menu-list .first-category {
+  background-color: #ffc000;
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
 .menu-list .sub-menu {
   background-color: #FFFFFF;
   left: 0;
   padding: 30px 0;
   position: absolute;
-  overflow: hidden;
-  text-align: left;
   width: 100%;
   z-index: 11;
 }
-.menu-list .sub-menu > li {
+.menu-list .sub-menu ul {
+  margin: 0 0 0 525px;
+  overflow: hidden;
+  text-align: left;
+}
+.menu-list .sub-menu ul > li {
   list-style: none;
   background-color: red;
   float: left;
+  width: 152px;
 }
-.menu-list .sub-menu p {
+.menu-list .sub-menu ul p {
   bottom: 0;
   left: 0;
   margin: 0;
-  position: absolute;
+  position: relative;
   right: 0;
   text-align: center;
 }
