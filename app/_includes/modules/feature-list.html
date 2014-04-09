@@ -1,0 +1,7 @@
+<ul class="list">
+    {% for feature in page.features %}
+        {% for value in feature %}
+            <li>{{ value }}</li>
+        {% endfor %}
+    {% endfor %}
+</ul>

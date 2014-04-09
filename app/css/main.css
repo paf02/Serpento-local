@@ -1389,12 +1389,16 @@ a > .ico-gt-small {
 .list {
   list-style: none;
 }
+.list > li {
+  padding-left: 15px;
+}
 .list > li:before {
   background-color: #ffc000;
   content: "";
   display: inline-block;
   height: 5px;
-  margin-right: 0.625em;
+  margin-left: -15px;
+  margin-right: 10px;
   vertical-align: middle;
   width: 5px;
 }
