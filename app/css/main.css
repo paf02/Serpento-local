@@ -1045,7 +1045,7 @@ table {
 }
 
 .ico {
-  background-image: url('../img/ico-s6588c56eff.png');
+  background-image: url('../img/ico-sacbb58500f.png');
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
@@ -1064,7 +1064,7 @@ table {
 }
 
 .ico-gt-alternate {
-  background-position: -113px 0;
+  background-position: -135px 0;
   height: 23px;
   width: 15px;
 }
@@ -1087,8 +1087,14 @@ table {
   width: 11px;
 }
 
-.ico-left-arrow {
+.ico-left-arrow-alternate {
   background-position: -91px 0;
+  height: 20px;
+  width: 11px;
+}
+
+.ico-left-arrow {
+  background-position: -102px 0;
   height: 20px;
   width: 11px;
 }
@@ -1100,31 +1106,37 @@ table {
 }
 
 .ico-ribbon-alternate-base {
-  background-position: -178px 0;
+  background-position: -200px 0;
   height: 50px;
   width: 17px;
 }
 
 .ico-ribbon-alternate-point {
-  background-position: -157px 0;
+  background-position: -179px 0;
   height: 50px;
   width: 21px;
 }
 
 .ico-ribbon-base {
-  background-position: -144px 0;
+  background-position: -166px 0;
   height: 40px;
   width: 13px;
 }
 
 .ico-ribbon-point {
-  background-position: -128px 0;
+  background-position: -150px 0;
   height: 40px;
   width: 16px;
 }
 
+.ico-right-arrow-alternate {
+  background-position: -124px 0;
+  height: 20px;
+  width: 11px;
+}
+
 .ico-right-arrow {
-  background-position: -102px 0;
+  background-position: -113px 0;
   height: 20px;
   width: 11px;
 }
@@ -1220,22 +1232,6 @@ a > .ico-gt-small {
   margin-top: -45px;
 }
 
-.best-sale-slider .bx-controls-direction a {
-  border: 1px solid #e0e0e0;
-  margin-top: -60px !important;
-  height: 120px !important;
-  width: 60px !important;
-}
-.best-sale-slider .bx-prev {
-  left: -120px !important;
-}
-.best-sale-slider .bx-next {
-  right: -120px !important;
-}
-.best-sale-slider .bx-viewport-bg {
-  display: none;
-}
-
 .img-arrow {
   left: 50%;
   margin-left: -6px;
@@ -1267,6 +1263,56 @@ a > .ico-gt-small {
   padding: 0;
   position: absolute;
   top: 0;
+}
+
+/*
+** SlideThis Carousel
+*/
+.slidethis {
+  overflow: hidden;
+  position: relative;
+}
+
+.slidethis-controls {
+  background-color: #F5F5F5;
+  border: 1px solid #e0e0e0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  vertical-align: middle;
+  width: 60px;
+}
+.slidethis-controls > .slider-hover {
+  display: none;
+}
+.slidethis-controls:hover {
+  background-color: #ffc000;
+  border-color: #ffc000;
+}
+.slidethis-controls:hover > .slider-normal {
+  display: none;
+}
+.slidethis-controls:hover > .slider-hover {
+  display: inline-block;
+}
+
+.best-sale-slider {
+  position: relative;
+}
+.best-sale-slider > .slidethis-controls {
+  line-height: 120px;
+  margin-top: -60px;
+  height: 120px;
+}
+.best-sale-slider > .slidethis-controls.slidethis-prev {
+  left: -120px;
+}
+.best-sale-slider > .slidethis-controls.slidethis-next {
+  right: -120px;
+}
+
+.best-sale-slider-container > .sale-slider-column {
+  width: 320px;
 }
 
 .price-container > strong {
@@ -1399,7 +1445,7 @@ a > .ico-gt-small {
   margin-top: 3.75em;
 }
 
-.best-sale-container {
+.best-sale-slider-container {
   padding-left: 0;
   padding-right: 0;
 }

@@ -31,28 +31,6 @@
     }
 }
 
-.best-sale-slider {
-    .bx-controls-direction a {
-        border: 1px solid #e0e0e0;
-        margin-top: -60px !important;
-        height: 120px !important;
-        width: 60px !important;
-    }
-
-    .bx-prev {
-        left: -120px !important;
-    }
-
-    .bx-next {
-        right: -120px !important;
-    }
-
-    .bx-viewport-bg {
-        display: none;
-    }
-}
-
-
 .img-left-arrow {
 
 }
@@ -95,4 +73,66 @@
         top: 0;
     }
 }
+
+/*
+** SlideThis Carousel
+*/
+
+.slidethis {
+    overflow: hidden;
+    position: relative;
+}
+
+.slidethis-controls {
+    background-color: #F5F5F5;
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    vertical-align: middle;
+    width: 60px;
+
+    > .slider-hover {
+        display: none;
+    }
+
+    &:hover {
+        background-color: $highlight-color;
+        border-color: $highlight-color;
+
+        > .slider-normal {
+            display: none;
+        }
+
+        > .slider-hover {
+            display: inline-block;
+        }
+    }
+}
+
+.best-sale-slider {
+    position: relative;
+
+    > .slidethis-controls {
+        
+        line-height: $sales-slider-controls-height;
+        margin-top: -($sales-slider-controls-height / 2);
+        height: $sales-slider-controls-height;
+        
+        &.slidethis-prev {
+            left: -120px;
+        }
+
+        &.slidethis-next {
+            right: -120px;
+        }
+    }
+}
+
+.best-sale-slider-container {
+    > .sale-slider-column {
+        width: 320px;
+    }
+}
+
 
