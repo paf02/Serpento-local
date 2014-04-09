@@ -76,7 +76,7 @@
             </li>
             <li><div style=" height: 300px; text-align: center; background-color: blue; width: auto;"></div></li>
         </ul> -->
-        <ul class="container best-sale-container slidethis" data-slidethis="id|awards,animate|true,delay|20,speed|300">
+        <ul class="container best-sale-container slidethis pafClase" data-slidethis="id|awards,animate|true,delay|20,speed|300">
             <li class="col4">
                 <div class="sale-column active">
                     <img class="best-sale-product" src="/img/python-j100.png" alt="Python J100">
@@ -132,6 +132,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('.select-box').selectBox();
+        $('.pafClase').setColumnsEqualHeight();
     });
 </script>
 {% endcontentfor %}

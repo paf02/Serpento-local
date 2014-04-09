@@ -40,6 +40,57 @@
         }
      });
 
+    /* Sets the height of 2 or more columns inside a container equally
+     * Usage: Add the class to the parent container
+     */
+    $.fn.extend({ 
+        setColumnsEqualHeight : function(options) {
+            
+            var defaults = {
+                    childSelector: '',
+                    parentContainer: '.setChildrenHeight'
+                },
+                options = $.extend(defaults, options);
+
+            function setHeight() {
+                var children    = options.$el.children(options.childSelector),
+                    maxHeight   = 0,
+                    childQty    = children.length,
+                    i           = 0;
+
+                for (; i < childQty; i++) {
+                    var $child  = $(children[i]),
+                        $height = parseInt($child.height(), 10),
+                        $pb     = parseInt($child.css('padding-bottom'), 10),
+                        $pt     = parseInt($child.css('padding-top'), 10);
+
+
+                    /*
+                    if (!($.browser.msie && parseInt($.browser.version, 10)) < 9) {
+                        if (!isNaN($pb)) {
+                            $height += $pb;
+                        }
+
+                        if (!isNaN($pt)) {
+                            $height += $pt;
+                        }
+                    }
+                    */
+
+                    maxHeight = Math.max(maxHeight, $height);
+                }
+                
+                options.$el.children().not('[data-ignore="true"]').css({ 'height': maxHeight });
+            }
+
+            return this.each(function() {
+                options.$el = $(this);
+
+                setHeight();
+            });
+        }
+    });
+
     $.fn.extend({ 
         carouselOne: function(options) {
 
