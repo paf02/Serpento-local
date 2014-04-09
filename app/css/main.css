@@ -995,7 +995,12 @@ table {
   float: left;
 }
 .menu-list .sub-menu p {
-  margin-bottom: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
 }
 
 .footer {
