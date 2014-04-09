@@ -2,12 +2,15 @@
     list-style: none;
 
     >li {
+        padding-left: 15px;
+
         &:before {
             background-color: $highlight-color;
             content: "";
             display: inline-block;
             height: 5px;
-            margin-right: 0.625em; //10px
+            margin-left: -15px;
+            margin-right: 10px;
             vertical-align: middle;
             width: 5px;
         }
