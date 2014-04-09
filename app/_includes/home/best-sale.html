@@ -132,7 +132,9 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('.select-box').selectBox();
-        $('.pafClase').setColumnsEqualHeight();
+        $('.pafClase').setColumnsEqualHeight({
+            parentHasHeight: true
+        });
     });
 </script>
 {% endcontentfor %}

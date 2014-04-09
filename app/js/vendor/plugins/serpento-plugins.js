@@ -48,7 +48,8 @@
             
             var defaults = {
                     childSelector: '',
-                    parentContainer: '.setChildrenHeight'
+                    parentContainer: '.setChildrenHeight',
+                    parentHasHeight: false
                 },
                 options = $.extend(defaults, options);
 
@@ -81,6 +82,9 @@
                 }
                 
                 options.$el.children().not('[data-ignore="true"]').css({ 'height': maxHeight });
+                if (options.parentHasHeight) {
+                    options.$el.css({ 'height': maxHeight });
+                }
             }
 
             return this.each(function() {
