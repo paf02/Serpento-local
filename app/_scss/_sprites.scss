@@ -1,6 +1,6 @@
 @import "compass/utilities/sprites";
 
-$icons: sprite-map("ico/*.png", $layout: smart); 
+$icons: sprite-map("ico/*.png", $layout: smart);
 
 .ico { 
     background-image: $icons;

@@ -120,7 +120,12 @@
         bottom: 0;
         position: absolute;
         top: 0;
-        width: 200px;
+        width: 400px;
+
+        .border-category {
+            position: absolute;
+            right: -20px;
+        }
     }
 
     .sub-menu {
@@ -135,12 +140,12 @@
             margin: 0 0 0 525px;
             overflow: hidden;
             text-align: left;
-            
+            height: 141px;
 
             > li {
                 list-style: none;
                 background-color: red;
-                float: left;
+                height: 141px;
                 width: 152px;
             }
 
@@ -148,11 +153,33 @@
                 bottom: 0;
                 left: 0;
                 margin: 0;
-                position: relative;
+                position: absolute;
                 right: 0;
                 text-align: center;
             }
         }
-    }
 
+        .prev {
+            border-right: 1px solid #e1e1e1;
+            left: 0;
+        }
+        .next {
+            border-left: 1px solid #e1e1e1;
+            right: 0;
+        }
+
+        a {
+            background-color: #F5F5F5;
+            height: 200px;
+            margin-top: -100px;
+            outline: 0 none;
+            padding: 0;
+            position: absolute;
+            text-indent: 0;
+            top: 50%;
+            width: 70px;
+            z-index: 9999;
+        }
+    }
 }
+

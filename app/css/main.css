@@ -984,7 +984,11 @@ table {
   bottom: 0;
   position: absolute;
   top: 0;
-  width: 200px;
+  width: 400px;
+}
+.menu-list .first-category .border-category {
+  position: absolute;
+  right: -20px;
 }
 .menu-list .sub-menu {
   background-color: #FFFFFF;
@@ -998,20 +1002,41 @@ table {
   margin: 0 0 0 525px;
   overflow: hidden;
   text-align: left;
+  height: 141px;
 }
 .menu-list .sub-menu ul > li {
   list-style: none;
   background-color: red;
-  float: left;
+  height: 141px;
   width: 152px;
 }
 .menu-list .sub-menu ul p {
   bottom: 0;
   left: 0;
   margin: 0;
-  position: relative;
+  position: absolute;
   right: 0;
   text-align: center;
+}
+.menu-list .sub-menu .prev {
+  border-right: 1px solid #e1e1e1;
+  left: 0;
+}
+.menu-list .sub-menu .next {
+  border-left: 1px solid #e1e1e1;
+  right: 0;
+}
+.menu-list .sub-menu a {
+  background-color: #F5F5F5;
+  height: 200px;
+  margin-top: -100px;
+  outline: 0 none;
+  padding: 0;
+  position: absolute;
+  text-indent: 0;
+  top: 50%;
+  width: 70px;
+  z-index: 9999;
 }
 
 .footer {
@@ -1061,104 +1086,110 @@ table {
 }
 
 .ico {
-  background-image: url('../img/ico-sacbb58500f.png');
+  background-image: url('../img/ico-sbe3b943bc5.png');
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
 }
 
 .ico-facebook {
-  background-position: -44px 0;
+  background-position: -44px -226px;
   height: 19px;
   width: 18px;
 }
 
 .ico-gplus {
-  background-position: -26px 0;
+  background-position: -26px -226px;
   height: 19px;
   width: 18px;
 }
 
 .ico-gt-alternate {
-  background-position: -135px 0;
+  background-position: -135px -226px;
   height: 23px;
   width: 15px;
 }
 
 .ico-gt-down {
-  background-position: 0 0;
+  background-position: 0 -226px;
   height: 9px;
   width: 15px;
 }
 
 .ico-gt-small {
-  background-position: -15px 0;
+  background-position: -15px -226px;
   height: 16px;
   width: 11px;
 }
 
 .ico-gt {
-  background-position: -80px 0;
+  background-position: -80px -226px;
   height: 20px;
   width: 11px;
 }
 
 .ico-left-arrow-alternate {
-  background-position: -91px 0;
+  background-position: -91px -226px;
   height: 20px;
   width: 11px;
 }
 
 .ico-left-arrow {
-  background-position: -102px 0;
+  background-position: -102px -226px;
   height: 20px;
   width: 11px;
 }
 
 .ico-logo {
-  background-position: 0 -50px;
+  background-position: 0 -200px;
   height: 26px;
   width: 217px;
 }
 
 .ico-ribbon-alternate-base {
-  background-position: -200px 0;
+  background-position: -50px 0;
   height: 50px;
   width: 17px;
 }
 
 .ico-ribbon-alternate-point {
-  background-position: -179px 0;
+  background-position: -29px 0;
   height: 50px;
   width: 21px;
 }
 
 .ico-ribbon-base {
-  background-position: -166px 0;
+  background-position: -16px 0;
   height: 40px;
   width: 13px;
 }
 
 .ico-ribbon-point {
-  background-position: -150px 0;
+  background-position: 0 0;
   height: 40px;
   width: 16px;
 }
 
 .ico-right-arrow-alternate {
-  background-position: -124px 0;
+  background-position: -124px -226px;
   height: 20px;
   width: 11px;
 }
 
 .ico-right-arrow {
-  background-position: -113px 0;
+  background-position: -113px -226px;
   height: 20px;
   width: 11px;
 }
 
+.ico-tringle-menu {
+  background-position: -67px 0;
+  height: 200px;
+  width: 28px;
+}
+
 .ico-twitter {
-  background-position: -62px 0;
+  background-position: -62px -226px;
   height: 19px;
   width: 18px;
 }
