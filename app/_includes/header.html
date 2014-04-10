@@ -20,25 +20,38 @@
         <div class="container">
             <a href="#" class="logo"><i class="ico ico-logo ico-text">Serpento</i></a>
             <ul class="menu-list">
-                <li><a class="active" href="bikes.html">Motocicletas</a>
-                    <ul class=" sub-menu">
-                        <li>
-                            <img src="/img/menu-moto1.jpg" alt="P600" >
-                            <p>Serpento P600</p>
-                        </li>
-                        <li>
-                            <img src="/img/menu-moto2.jpg" alt="P600" >
-                            <p>Serpento P600</p>
-                        </li>
-                        <li>
-                            <img src="/img/menu-moto3.jpg" alt="P600" >
-                            <p>Serpento P600</p>
-                        </li>
-                        <li>
-                            <img src="/img/menu-moto4.jpg" alt="P600" >
-                            <p>Serpento P600</p>
-                        </li>
-                    </ul>
+                <li><a class="active has-sub-menu" href="bikes.html" data-showsubmenu=".feo" >Motocicletas</a>
+                    <div class="sub-menu feo">
+                        <div class="sub-menu-hover">
+                            <div class="first-category"><p class="sub-menu-text"><strong>Primera Categoria</strong></p><i class="ico-tringle-menu ico border-category"></i></div>
+                            <ul class=" slidethis" data-slidethis="id|awards,animate|true,delay|20,speed|300">
+                                <li>
+                                    <img src="/img/menu-moto1.jpg" alt="P600" >
+                                    <p class="sub-menu-text"><strong>Serpento P600</strong></p>
+                                </li>
+                                <li>
+                                    <img src="/img/menu-moto2.jpg" alt="P600" >
+                                    <p class="sub-menu-text"><strong>Serpento XR7000</strong></p>
+                                </li>
+                                <li>
+                                    <img src="/img/menu-moto3.jpg" alt="P600" >
+                                    <p class="sub-menu-text"><strong>Serpento V8</strong></p>
+                                </li>
+                                <li>
+                                    <img src="/img/menu-moto4.jpg" alt="P600" >
+                                    <p class="sub-menu-text"><strong>Serpento V800</strong></p>
+                                </li>
+                                <li>
+                                    <img src="/img/menu-moto4.jpg" alt="P600" >
+                                    <p class="sub-menu-text"><strong>Serpento V800</strong></p>
+                                </li>
+                            </ul>
+                            <!-- Indicators -->
+                            <a href="javascript:void(0);" data-slidethis="id|awards" class="left slidethis-prev prev"><i class="img-left-arrow img-arrow ico ico-left-arrow ico-text">Prev</i></a>
+                            <a href="javascript:void(0);" data-slidethis="id|awards" class="right slidethis-next next"><i class="img-right-arrow img-arrow ico ico-right-arrow ico-text">Next</i></a>
+                        </div>
+                        <div class="sub-menu-gradient"></div>
+                    </div>
                 </li>
                 
                 <li><a href="#">Accesorios</a></li>
@@ -50,14 +63,14 @@
         </div>
     </nav>
 </header>
-
 {% contentfor inlinescripts %}
 <script type="text/javascript">
     $(document).ready(function(){
-        $('.bxslider111').bxSlider({
-            pager: false
+        $('a.has-sub-menu, .sub-menu-hover').mouseenter(function() {
+            $($('a.has-sub-menu').data('showsubmenu')).css('display', 'block');
+        }).mouseleave(function() {
+            $($('.has-sub-menu').data('showsubmenu')).css('display', 'none');
         });
     });
 </script>
 {% endcontentfor %}
-
