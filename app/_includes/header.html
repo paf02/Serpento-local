@@ -11,7 +11,7 @@
             </div>
             <div class="location">
                 <span>Actualmente en:</span>
-                <span class="current-location">San Pedro, San Jose</span>
+                <span class="current-location" id="address">San Pedro, San Jose</span>
                 <a href="">Buscar Punto de Venta</a>
             </div>
         </div>
@@ -72,5 +72,8 @@
             $($('.has-sub-menu').data('showsubmenu')).css('display', 'none');
         });
     });
+    $.get("http://ipinfo.io", function (response) {
+        $("#address").html(response.city + ", " + response.country);
+    }, "jsonp");
 </script>
 {% endcontentfor %}
