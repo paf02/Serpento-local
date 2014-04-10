@@ -23,6 +23,66 @@
     overflow: hidden;
     position: relative;
     width: 100%;
+
+    > .rotated-content {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.rotated-container {
+    > .is-rotated:last-child {
+        padding-bottom: 0;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    > .is-rotated:first-child {
+        padding-top: 0;
+        
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.is-rotated {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &.rotated-alternate-bg {
+        &:before {
+            background-color: $alternate-background;
+            border-top: 1px solid #e4e4e4;
+        }
+
+        &:after {
+            background-color: $alternate-background;
+            border-bottom: 1px solid #e4e4e4;
+        }
+    }
+
+    &:before, &:after {
+        content: "";
+        display: block;
+        padding: 50px 0;
+        width: 102%;
+        position: absolute;
+    }
+
+    &.rotated-left {
+        &:before {
+            transform:rotate(-2.5deg);
+            top: 34px;
+        }
+
+        &:after {
+            transform:rotate(-2.5deg);
+            bottom: 34px; 
+        }
+    }
 }
 
 .alternate-background {

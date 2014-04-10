@@ -1,0 +1,51 @@
+---
+layout: default
+title: Motorcicles
+---
+<section class="bikes">
+    <div class="bike-header-container">
+        <div class="content-header bike-content-header container clearfix">
+            <div>
+                <h2>Motocicletas</h2>
+            </div>
+            <div class="sale-location">
+                <span>Donde Comprar?</span>
+                <div class="select-box">
+                    <div class="select-box-current">
+                        <span class="current-location">San José</span>
+                        <i class="ico ico-gt-down"></i>
+                    </div>
+                    <ul class="select-box-options">
+                        <li class="location">Alajuela</li>
+                        <li class="location">Cartago</li>
+                        <li class="location">Guanacaste</li>
+                        <li class="location">Heredia</li>
+                        <li class="location">Limón</li>
+                        <li class="location">Puntarenas</li>
+                        <li class="location selected">San José</li>      
+                    </ul>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="bike-content-container rotated-container">
+        {% for page in site.pages %}
+            {% if page.is-bike == true %}
+                    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+                    {% if thecycle == 'even' %}
+                        <div class="is-rotated rotated-alternate-bg has-rotated rotated-left">
+                            <div class="alternate-background rotated-content">
+                                <div class="container">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, ratione, labore, sed, eum nihil consectetur officiis nulla cum molestias tempora commodi quas aliquam sequi nobis laborum qui possimus a facere!</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="container">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, ratione, labore, sed, eum nihil consectetur officiis nulla cum molestias tempora commodi quas aliquam sequi nobis laborum qui possimus a facere!</p>
+                        </div>
+                    {% endif %}
+            {% endif %}      
+        {% endfor %}
+    </div>
+</section>

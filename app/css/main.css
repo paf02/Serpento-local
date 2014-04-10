@@ -698,6 +698,51 @@ table {
   position: relative;
   width: 100%;
 }
+.has-rotated > .rotated-content {
+  position: relative;
+  z-index: 1;
+}
+
+.rotated-container > .is-rotated:last-child {
+  padding-bottom: 0;
+}
+.rotated-container > .is-rotated:last-child:after {
+  display: none;
+}
+.rotated-container > .is-rotated:first-child {
+  padding-top: 0;
+}
+.rotated-container > .is-rotated:first-child:before {
+  display: none;
+}
+
+.is-rotated {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.is-rotated.rotated-alternate-bg:before {
+  background-color: whitesmoke;
+  border-top: 1px solid #e4e4e4;
+}
+.is-rotated.rotated-alternate-bg:after {
+  background-color: whitesmoke;
+  border-bottom: 1px solid #e4e4e4;
+}
+.is-rotated:before, .is-rotated:after {
+  content: "";
+  display: block;
+  padding: 50px 0;
+  width: 102%;
+  position: absolute;
+}
+.is-rotated.rotated-left:before {
+  transform: rotate(-2.5deg);
+  top: 34px;
+}
+.is-rotated.rotated-left:after {
+  transform: rotate(-2.5deg);
+  bottom: 34px;
+}
 
 .alternate-background {
   background-color: whitesmoke;
@@ -984,6 +1029,7 @@ table {
   display: block;
 }
 .menu-list .sub-menu {
+  display: none;
   background-color: #FFFFFF;
   display: none;
   left: 0;
@@ -1609,3 +1655,7 @@ a > .ico-gt-small {
   font-weight: bold;
   vertical-align: middle;
 }
+
+/*
+** Bikes
+*/
