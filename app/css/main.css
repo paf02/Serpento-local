@@ -1025,21 +1025,20 @@ table {
   color: #ffc000;
   padding-bottom: 2.333333333em;
 }
-.menu-list a.active + .sub-menu {
-  display: block;
-}
 .menu-list .sub-menu {
-  display: none;
   background-color: #FFFFFF;
   display: none;
+  height: 200px;
   left: 0;
-  padding: 30px 0;
   position: absolute;
   width: 100%;
   z-index: 99999;
 }
-.menu-list .sub-menu:hover {
-  display: block;
+.menu-list .sub-menu .sub-menu-hover {
+  left: 0;
+  padding: 30px 0;
+  position: absolute;
+  right: 0;
 }
 .menu-list .sub-menu ul {
   margin: 0 145px 0 525px;

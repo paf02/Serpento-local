@@ -395,7 +395,6 @@ el.wrap('<div class="bx-wrapper"><div class="bx-viewport"></div><div class="bx-v
 					return $(this).outerHeight(false);
 				}).get());
 			}
-			console.log(height);
 
 			return height;
 		}

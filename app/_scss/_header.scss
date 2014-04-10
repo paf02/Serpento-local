@@ -113,27 +113,25 @@
             border-bottom: 0.333333333em solid $highlight-color;//4px solid $highlight-color;
             color: $highlight-color;
             padding-bottom: 2.333333333em; //28px;
-
-            &+ .sub-menu {
-                display: block;
-            }
         }
     }
 
     .sub-menu {
-        display: none;
         background-color: #FFFFFF;
         display: none;
+        height: 200px;
         left: 0;
-        padding: 30px 0;
         position: absolute;
         width: 100%;
         z-index: 99999;
 
-        &:hover {
-            display: block;
+        .sub-menu-hover {
+            left: 0;
+            padding: 30px 0;
+            position: absolute;
+            right: 0;
         }
-    
+
         ul {
             margin: 0 145px 0 525px;
             text-align: left;
