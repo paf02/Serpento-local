@@ -20,8 +20,8 @@
         <div class="container">
             <a href="#" class="logo"><i class="ico ico-logo ico-text">Serpento</i></a>
             <ul class="menu-list">
-                <li><a class="active has-sub-menu" href="bikes.html" data-showsubmenu=".feo" >Motocicletas</a>
-                    <div class="sub-menu feo">
+                <li><a class="active has-sub-menu" href="bikes.html" data-showsubmenu=".motos" >Motocicletas</a>
+                    <div class="sub-menu motos">
                         <div class="sub-menu-hover">
                             <div class="first-category"><p class="sub-menu-text"><strong>Primera Categoria</strong></p><i class="ico-tringle-menu ico border-category"></i></div>
                             <ul class=" slidethis" data-slidethis="id|awards,animate|true,delay|20,speed|300">
@@ -66,10 +66,18 @@
 {% contentfor inlinescripts %}
 <script type="text/javascript">
     $(document).ready(function(){
-        $('a.has-sub-menu, .sub-menu-hover').mouseenter(function() {
-            $($('a.has-sub-menu').data('showsubmenu')).css('display', 'block');
-        }).mouseleave(function() {
-            $($('.has-sub-menu').data('showsubmenu')).css('display', 'none');
+        var tim,
+            $hasSubMenuSelec = $('a.has-sub-menu, .sub-menu-hover');
+        $hasSubMenuSelec.on({
+            mouseenter: function() {
+                clearTimeout(tim);
+                $($('a.has-sub-menu').data('showsubmenu')).slideDown(500);
+            },
+            mouseleave: function() {
+                tim = setTimeout(function() {
+                    $($('a.has-sub-menu').data('showsubmenu')).slideUp(500);
+                }, 300);
+            }
         });
     });
 </script>
