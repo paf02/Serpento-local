@@ -1658,3 +1658,39 @@ a > .ico-gt-small {
 /*
 ** Bikes
 */
+.bike-header-container {
+  padding-bottom: 3.5em;
+  padding-top: 3.5em;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0px 7px 10px #e0e0e0;
+}
+
+.bike-content-container > div:last-child .bikes-container {
+  padding-bottom: 3.75em;
+}
+.bike-content-container > .bikes-container:first-child {
+  padding-top: 5em;
+}
+.bike-content-container > .bikes-container:last-child {
+  padding-bottom: 3.75em;
+}
+.bike-content-container > div:first-child .bikes-container {
+  padding-top: 5em;
+}
+
+.bikes-container {
+  padding-bottom: 1.875em;
+  padding-top: 1.875em;
+}
+
+.bikes-features > .list {
+  color: #666666;
+}
+.bikes-features > p {
+  color: #666666;
+  line-height: 1;
+}
+.bikes-features > .ribbon {
+  display: block;
+  margin-bottom: 2.142857143em;
+}
