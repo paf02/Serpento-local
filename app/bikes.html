@@ -35,17 +35,52 @@ title: Motorcicles
                     {% if thecycle == 'even' %}
                         <div class="is-rotated rotated-alternate-bg has-rotated rotated-left">
                             <div class="alternate-background rotated-content">
-                                <div class="container">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, ratione, labore, sed, eum nihil consectetur officiis nulla cum molestias tempora commodi quas aliquam sequi nobis laborum qui possimus a facere!</p>
+                                <div class="container bikes-container">
+                                    <div class="col8">
+                                        <div>
+                                            <img src="{{ page.bike-img }}" alt="{{ page.model }}">    
+                                        </div>    
+                                    </div>  
+                                    <div class="col4-last">
+                                        <div class="bikes-features">
+                                            <h3>{{ page.model }}</h3>
+                                            {% include modules/feature-list.html %}
+                                            <p class="price-container"><span class="price price-medium price-tile">{{ page.financed-price }}</span><strong>FINANCIADO A {{ page.financed-period }} MESES</strong></p>
+                                            <p class="price-container"><span class="price price-small price-tile">{{ page.cash-price }}</span><strong>AL CONTADO</strong></p>
+                                            <a href="{{ page.more-info-url }}" class="ribbon"><i class="ico ico-ribbon-base"></i><span class="ribbon-content"><strong>MAS INFORMACION</strong><i class="ico ico-gt"></i></span><i class="ico ico-ribbon-point"></i></a>
+                                            <a href="#">Comparar Modelos<i class="ico ico-gt-small"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     {% else %}
-                        <div class="container">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, ratione, labore, sed, eum nihil consectetur officiis nulla cum molestias tempora commodi quas aliquam sequi nobis laborum qui possimus a facere!</p>
+                        <div class="container bikes-container">
+                            <div class="col4">
+                                <div class="bikes-features">
+                                    <h3>{{ page.model }}</h3>
+                                    {% include modules/feature-list.html %}
+                                    <p class="price-container"><span class="price price-medium price-tile">{{ page.financed-price }}</span><strong>FINANCIADO A {{ page.financed-period }} MESES</strong></p>
+                                    <p class="price-container"><span class="price price-small price-tile">{{ page.cash-price }}</span><strong>AL CONTADO</strong></p>
+                                    <a href="{{ page.more-info-url }}" class="ribbon"><i class="ico ico-ribbon-base"></i><span class="ribbon-content"><strong>MAS INFORMACION</strong><i class="ico ico-gt"></i></span><i class="ico ico-ribbon-point"></i></a>
+                                    <a href="#">Comparar Modelos<i class="ico ico-gt-small"></i></a>
+                                </div>
+                            </div>
+                            <div class="col8-last">
+                                <div>
+                                    <img src="{{ page.bike-img }}" alt="{{ page.model }}">    
+                                </div>    
+                            </div>  
                         </div>
                     {% endif %}
             {% endif %}      
         {% endfor %}
     </div>
 </section>
+{% contentfor inlinescripts %}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.select-box').selectBox();
+    });
+</script>
+{% endcontentfor %}
