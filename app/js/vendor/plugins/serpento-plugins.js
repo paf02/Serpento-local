@@ -128,7 +128,7 @@
                 var latlng = new google.maps.LatLng(lat, lng);
                 geocoder.geocode({'latLng': latlng}, function(results, status) {
                     if (status == google.maps.GeocoderStatus.OK) {
-                        if (results[3]) {
+                        if (results[1]) {
                             //console.log(results[3].formatted_address);
                             options.$el.html(results[3].formatted_address);
                         } else {
