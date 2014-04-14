@@ -1322,13 +1322,21 @@ a > .ico-gt-small {
 }
 
 .main-banner-image {
-  background-image: url("../img/bg-home-main-banner.png");
   background-position: right top;
   background-repeat: no-repeat;
   height: 698px;
   position: absolute;
   width: 100%;
   z-index: 1;
+}
+.main-banner-image.red-bike {
+  background-image: url("../img/bg-home-main-banner.png");
+}
+.main-banner-image.green-bike {
+  background-image: url("../img/bg-home-main-banner-2.png");
+}
+.main-banner-image.blue-bike {
+  background-image: url("../img/bg-home-main-banner-3.png");
 }
 @media all and (max-width: 1600px) {
   .main-banner-image {

@@ -40,13 +40,24 @@
 }
 
 .main-banner-image {
-    background-image: url("#{$img-path}bg-home-main-banner.png");
     background-position: right top;
     background-repeat: no-repeat;
     height: 698px;
     position: absolute;
     width: 100%;
     z-index: 1;
+
+    &.red-bike {
+        background-image: url("#{$img-path}bg-home-main-banner.png");
+    }
+
+    &.green-bike {
+        background-image: url("#{$img-path}bg-home-main-banner-2.png");
+    }
+
+    &.blue-bike {
+        background-image: url("#{$img-path}bg-home-main-banner-3.png");
+    }
 
     @media all and (max-width: 1600px) {
         background-position: 630px 0; 
