@@ -96,32 +96,55 @@
     });
 
     $.fn.extend({ 
-        carouselOne: function(options) {
+        geoLocation: function(options) {
 
             //Settings list and the default values
             var defaults = {
-                    defaultRating: 0,
-                    totalStars: 5
+                    
                 },
-                options = $.extend(defaults, options);
+                options = $.extend(defaults, options),
+                geocoder;
 
-            function builtUl() {
-                var totalRating = 0,
-                    totalRatingPartial = 0,
-                    fragment = document.createDocumentFragment(),
-                    ul = fragment.appendChild(document.createElement('ul')),
-                    i  = 0,
-                    vecRatingStarsInit;
+            function init(){
+                try {
+                    geocoder = new google.maps.Geocoder();
+                    navigator.geolocation.watchPosition(callback);
+                }
+                catch (e) {
+                    options.$el.html('No se logro ubicar su posicion actual');
+                    console.log(e);
+                }
+            }
+            function callback(position){
+                /*
+                console.log(position.coords.latitude);
+                console.log(position.coords.longitude);
+                */
+                codeLatLng(position.coords.latitude, position.coords.longitude)
 
-                
-                vecRatingStarsInit = options.$el.data('rating');
+            }
 
+            function codeLatLng(lat, lng) {
+                var latlng = new google.maps.LatLng(lat, lng);
+                geocoder.geocode({'latLng': latlng}, function(results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        if (results[1]) {
+                            //console.log(results[3].formatted_address);
+                            options.$el.html(results[3].formatted_address);
+                        } else {
+                            options.$el.html('No se logro ubicar su posicion actual');//alert("No results found");
+                        }
+                    } else {
+                        options.$el.html('No se logro ubicar su posicion actual');
+                        console.log("Geocoder failed due to: " + status);
+                    }
+                });
             }
 
             return this.each(function() {
                 options.$el = $(this);
 
-                builtUl();
+                init();
             });
         }
     });
