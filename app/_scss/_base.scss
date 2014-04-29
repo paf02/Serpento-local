@@ -1,9 +1,20 @@
 // Susy grids
 
-$total-columns: 12;
-$column-width: 4em;
-$gutter-width: 1.25em;
-$container-width: 1000px;
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  container: 1000px,
+  column-width: 4em,
+);
+
+// $total-columns: 12;
+// $column-width: 4em;
+// $gutter-width: 1.25em;
+// $container-width: 1000px;
 
 /*
  * Base styles

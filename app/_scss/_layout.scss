@@ -2,7 +2,7 @@
     color: $base-color;
     font-size: $base-font-size;
     min-width: 1000px;
-    @include container;
+    @include container();
 }
 
 .rotate {
@@ -64,7 +64,7 @@
         }
     }
 
-    &:before, &:after {
+    &:before of &:after {
         content: "";
         display: block;
         padding: 50px 0;
@@ -90,93 +90,93 @@
 }
 
 .col1 {
-    @include span-columns(1, 12);
+    @include span (1);
 }
 
 .col1-last {
-    @include span-columns(1 omega, 12);
+    @include span (1 at 11);
 }
 
 .col2 {
-    @include span-columns(2, 12);
+    @include span (2);
 }
 
 .col2-last {
-    @include span-columns(2 omega, 12);
+    @include span (2 at 11);
 }
 
 .col3 {
-    @include span-columns(3, 12);
+    @include span (3);
 }
 
 .col3-last {
-    @include span-columns(3 omega, 12);
+    @include span (3 at 10);
 }
 
 .col4 {
-    @include span-columns(4, 12);
+    @include span (4);
 }
 
 .col4-last {
-    @include span-columns(4 omega, 12);
+    @include span (4 at 9 );
 }
 
 .col5 {
-    @include span-columns(5, 12);
+    @include span (5);
 }
 
 .col5-last {
-    @include span-columns(5 omega, 12);
+    @include span (5 at 8);
 }
 
 .col6 {
-    @include span-columns(6, 12);
+    @include span (6);
 }
 
 .col6-last {
-    @include span-columns(6 omega, 12);
+    @include span (6 at 7);
 }
 
 .col7 {
-    @include span-columns(7, 12);
+    @include span (7);
 }
 
 .col7-last {
-    @include span-columns(7 omega, 12);
+    @include span (7 at 6);
 }
 
 .col8 {
-    @include span-columns(8, 12);
+    @include span (8);
 }
 
 .col8-last {
-    @include span-columns(8 omega, 12);
+    @include span (8 at 5);
 }
 
 .col9 {
-    @include span-columns(9, 12);
+    @include span (9);
 }
 
 .col9-last {
-    @include span-columns(9 omega, 12);
+    @include span (9 at 4);
 }
 
 .col10 {
-    @include span-columns(10, 12);
+    @include span (10);
 }
 
 .col10-last {
-    @include span-columns(10 omega, 12);
+    @include span (10 at 3);
 }
 
 .col11 {
-    @include span-columns(11, 12);
+    @include span (11);
 }
 
 .col11-last {
-    @include span-columns(11 omega, 12);
+    @include span (11 at 2);
 }
 
 .col12-last {
-    @include span-columns(12 omega, 12);
+    @include span (12 at 1);
 }
