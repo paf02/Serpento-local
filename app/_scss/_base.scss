@@ -7,9 +7,16 @@ $susy: (
   math: fluid,
   output: float,
   gutter-position: inside,
-  container: 1000px,
   column-width: 4em,
 );
+
+// $susy: (
+//     columns: 12,
+//     gutters: 1/4,
+//     math: fluid,
+//     output: float,
+//     gutter-position: split,
+// );
 
 // $total-columns: 12;
 // $column-width: 4em;
@@ -24,7 +31,8 @@ body {
     background: #ffffff;
     font-size: 10px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    min-width: 1000px;
+    
+    
 }
 
 h1, h2, h3, h4, h5, h6, p, ul {

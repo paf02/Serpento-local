@@ -130,8 +130,10 @@
 }
 
 .best-sale-slider-container {
+    list-style: none;
+
     > .sale-slider-column {
-        width: 320px;
+        
     }
 }
 

@@ -1,8 +1,17 @@
 .container {
     color: $base-color;
     font-size: $base-font-size;
-    min-width: 1000px;
-    @include container();
+    @include container(1000px);
+}
+
+@include breakpoint(1000px) {
+    main {
+        @include span(8);
+    }
+
+    aside {
+        @include span(4 at 9);
+    }
 }
 
 .rotate {
@@ -52,37 +61,58 @@
     padding-top: 80px;
     padding-bottom: 80px;
 
-    &.rotated-alternate-bg {
-        &:before {
-            background-color: $alternate-background;
-            border-top: 1px solid #e4e4e4;
-        }
-
-        &:after {
-            background-color: $alternate-background;
-            border-bottom: 1px solid #e4e4e4;
-        }
-    }
-
-    &:before of &:after {
-        content: "";
-        display: block;
-        padding: 50px 0;
-        width: 102%;
+    
+    .before, .after {
+        background-color: $alternate-background;
         position: absolute;
+        transform: rotate(-2.5deg);
+        width: 104%;
     }
 
-    &.rotated-left {
-        &:before {
-            transform:rotate(-2.5deg);
-            top: 34px;
-        }
 
-        &:after {
-            transform:rotate(-2.5deg);
-            bottom: 34px; 
-        }
+    .before {
+        border-top: 1px solid #e4e4e4;
+        padding-bottom: 80px;
+        top: 34px;
     }
+
+    .after {
+        border-bottom: 1px solid #e4e4e4;
+        padding-bottom: 80px;
+        bottom: 34px; 
+    }
+
+    // &.rotated-alternate-bg {
+    //     &:before {
+    //         background-color: $alternate-background;
+    //         border-top: 1px solid #e4e4e4;
+    //     }
+
+    //     &:after {
+    //         background-color: $alternate-background;
+    //         border-bottom: 1px solid #e4e4e4;
+    //     }
+    // }
+
+    // &:before of &:after {
+    //     content: "";
+    //     display: block;
+    //     padding: 50px 0;
+    //     width: 102%;
+    //     position: absolute;
+    // }
+
+    // &.rotated-left {
+    //     &:before {
+    //         transform:rotate(-2.5deg);
+    //         top: 34px;
+    //     }
+
+    //     &:after {
+    //         transform:rotate(-2.5deg);
+    //         bottom: 34px; 
+    //     }
+    // }
 }
 
 .alternate-background {

@@ -34,6 +34,7 @@ title: Motorcicles
                     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
                     {% if thecycle == 'even' %}
                         <div class="is-rotated rotated-alternate-bg has-rotated rotated-left">
+                            <span class="before"></span>
                             <div class="alternate-background rotated-content">
                                 <div class="container bikes-container">
                                     <div class="col8">
@@ -53,6 +54,7 @@ title: Motorcicles
                                     </div>
                                 </div>
                             </div>
+                            <span class="after"></span>
                         </div>
                     {% else %}
                         <div class="container bikes-container">

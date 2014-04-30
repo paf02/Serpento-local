@@ -573,7 +573,6 @@ body {
   background: #ffffff;
   font-size: 10px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  min-width: 1000px;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul {
@@ -664,17 +663,37 @@ table {
 .container {
   color: black;
   font-size: 16px;
-  min-width: 1000px;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
-.container::after {
+.container:after {
   content: " ";
   display: block;
   clear: both;
 }
 
+@media (min-width: 1000px) {
+  main {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  aside {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
 .rotate {
   margin-left: -12px;
   padding: 40px 0;
@@ -716,27 +735,20 @@ table {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.is-rotated.rotated-alternate-bg:before {
+.is-rotated .before, .is-rotated .after {
   background-color: whitesmoke;
-  border-top: 1px solid #e4e4e4;
-}
-.is-rotated.rotated-alternate-bg:after {
-  background-color: whitesmoke;
-  border-bottom: 1px solid #e4e4e4;
-}
-.is-rotated:before of .is-rotated:after {
-  content: "";
-  display: block;
-  padding: 50px 0;
-  width: 102%;
   position: absolute;
-}
-.is-rotated.rotated-left:before {
   transform: rotate(-2.5deg);
+  width: 104%;
+}
+.is-rotated .before {
+  border-top: 1px solid #e4e4e4;
+  padding-bottom: 80px;
   top: 34px;
 }
-.is-rotated.rotated-left:after {
-  transform: rotate(-2.5deg);
+.is-rotated .after {
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 80px;
   bottom: 34px;
 }
 
@@ -1094,7 +1106,7 @@ table {
   right: 0;
 }
 .menu-list .sub-menu ul {
-  margin: 0 145px 0 525px;
+  margin: 0 7em 0 35em;
   text-align: left;
   height: 140px;
 }
@@ -1503,8 +1515,8 @@ a > .ico-gt-small {
   right: -120px;
 }
 
-.best-sale-slider-container > .sale-slider-column {
-  width: 320px;
+.best-sale-slider-container {
+  list-style: none;
 }
 
 .price-container > strong {
