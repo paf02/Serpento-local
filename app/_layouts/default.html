@@ -49,6 +49,14 @@
     
 
     {% contentblock inlinescripts %}
+    <script type="text/javascript">
+        console.log($('.actual-bg-height').height());
+
+        var feo = $('.actual-bg-height').height();
+        $('.bx-viewport-bg').css('height' , feo);
+        $('.bx-viewport-bg').css('padding-bottom' , '1000px');
+
+    </script>
 
 
     </body>

@@ -135,8 +135,6 @@ el.wrap('<div class="bx-wrapper"><div class="bx-viewport"></div><div class="bx-v
 		var windowWidth = $(window).width();
 		var windowHeight = $(window).height();
 
-
-
 		/**
 		 * ===================================================================================
 		 * = PRIVATE FUNCTIONS
@@ -327,8 +325,17 @@ el.wrap('<div class="bx-wrapper"><div class="bx-viewport"></div><div class="bx-v
 			// if "vertical" mode, always use adaptiveHeight to prevent odd behavior
 			if (slider.settings.mode == 'vertical') slider.settings.adaptiveHeight = true;
 			// set the viewport height
-			$('.bx-viewport-bg').height($('.actual-bg-height').height());
+
+
+
+
 			slider.viewport.height(getViewportHeight());
+
+
+
+
+
+			
 			// make sure everything is positioned just right (same as a window resize)
 			el.redrawSlider();
 			// onSliderLoad callback

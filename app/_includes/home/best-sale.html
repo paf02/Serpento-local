@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="best-sale-slider">
-        <ul class="container best-sale-slider-container slidethis pafClase" data-slidethis="id|bikes,animate|true,delay|20,speed|300">
+        <ul class="container best-sale-slider-container slidethis sameHeight" data-slidethis="id|bikes,animate|true,delay|20,speed|300">
             {% for page in site.pages %}
                 {% if page.is-bike == true %}
                     <li class="col4 sale-slider-column sale-slider-column">
@@ -50,7 +50,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('.select-box').selectBox();
-        $('.pafClase').setColumnsEqualHeight({
+        $('.sameHeight').setColumnsEqualHeight({
             parentHasHeight: true
         });
     });
